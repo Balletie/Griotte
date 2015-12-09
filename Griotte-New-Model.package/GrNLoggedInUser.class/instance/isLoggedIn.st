@@ -1,0 +1,4 @@
+testing
+isLoggedIn
+
+	^ true

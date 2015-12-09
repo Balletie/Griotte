@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"commentClass" : "SkipLentz 12/9/2015 16:31",
+		"createOnRepository:withTitle:description:" : "SkipLentz 12/9/2015 16:18",
+		"repositoryClass" : "SkipLentz 12/9/2015 16:28" },
+	"instance" : {
+		"approve" : "SkipLentz 12/9/2015 14:06",
+		"initializeWithRepository:pullRequest:" : "SkipLentz 12/9/2015 16:19",
+		"reject" : "SkipLentz 12/9/2015 14:06" } }
