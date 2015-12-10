@@ -4,9 +4,9 @@ createOnRepository: aRepository withTitle: aTitleString description: aDescriptio
 	repo := aRepository apiRepository.
 	" Get the last commit event. "
 	commitEvent := EpMonitor current log
-		fromHeadDetect: [ :event |
-			event isGitHubVersionCommit and: [
-				event repositoryUrl = repo url ] ]
+		fromHeadDetect: [ :entry |
+			entry content isGitHubVersionCommit and: [
+				entry content repositoryUrl = repo url ] ]
 		ifNotFound: [ ^ self ].
 	commitEvent ref = ('heads/' , repo defaultBranch)
 		ifTrue: [ ^ self ].
