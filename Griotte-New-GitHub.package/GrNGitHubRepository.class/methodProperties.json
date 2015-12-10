@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"onGitHubRepository:" : "SkipLentz 12/9/2015 16:24",
+		"onAPIRepository:" : "SkipLentz 12/10/2015 14:35",
 		"reviewClass" : "SkipLentz 12/9/2015 16:28" },
 	"instance" : {
-		"gitHubRepository" : "SkipLentz 12/9/2015 16:25",
-		"initializeWithGitHubRepository:" : "SkipLentz 12/9/2015 16:25" } }
+		"apiRepository" : "SkipLentz 12/10/2015 14:36",
+		"initializeWithAPIRepository:" : "SkipLentz 12/10/2015 14:35" } }

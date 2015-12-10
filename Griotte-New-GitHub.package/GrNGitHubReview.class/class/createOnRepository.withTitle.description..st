@@ -1,7 +1,7 @@
 instance creation
 createOnRepository: aRepository withTitle: aTitleString description: aDescriptionString
 	| repo commitEvent pr |
-	repo := aRepository gitHubRepository.
+	repo := aRepository apiRepository.
 	" Get the last commit event. "
 	commitEvent := EpMonitor current log
 		fromHeadDetect: [ :event |
