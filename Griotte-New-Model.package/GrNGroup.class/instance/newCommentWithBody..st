@@ -1,6 +1,9 @@
 creating
 newCommentWithBody: aString
 	" Create a comment on me "
-	self class commentClass
+	| comment |
+	comment := self class commentClass
 		onGroup: self
-		withBody: aString
+		withBody: aString.
+	comments add: comment.
+	^ comment

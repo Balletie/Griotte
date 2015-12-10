@@ -1,7 +1,9 @@
 creating
 newReviewWithTitle: aTitleString description: aDescriptionString
-
-	self class reviewClass
+	| review |
+	review := self class reviewClass
 		onRepository: self
 		withTitle: aTitleString
-		description: aDescriptionString
+		description: aDescriptionString.
+	reviews add: review.
+	^ review

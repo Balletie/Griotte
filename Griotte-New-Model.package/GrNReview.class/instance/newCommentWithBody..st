@@ -1,6 +1,9 @@
 creating
 newCommentWithBody: aString
 	" Create a top-level comment on the review. "
-	self class commentClass
+	| comment |
+	comment := self class commentClass
 		onReview: self
-		withBody: aString
+		withBody: aString.
+	comments add: comment.
+	^ comment

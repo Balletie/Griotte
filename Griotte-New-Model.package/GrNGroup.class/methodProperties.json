@@ -2,4 +2,5 @@
 	"class" : {
 		"commentClass" : "SkipLentz 12/9/2015 16:32" },
 	"instance" : {
-		"newCommentWithBody:" : "SkipLentz 12/9/2015 14:36" } }
+		"initialize" : "SkipLentz 12/10/2015 15:29",
+		"newCommentWithBody:" : "SkipLentz 12/10/2015 15:28" } }
