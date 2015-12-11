@@ -16,7 +16,6 @@ testMine
 			logBuilder logEvent: (EpExpressionEvaluation expression: 'end').
 			end := logBuilder log head content.
 			logBuilder logEvent: (EpExpressionEvaluation expression: 'after') ].
-	self halt.
 	minedEvents := miner
 		mineFrom: [ :event | event = end ]
 		until: [ :event | event = start ].
