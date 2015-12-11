@@ -3,7 +3,7 @@ createReview: aTitle inRepo: aRepository
 	| repositoryAPI filetreeRepo events |
 	events := (GrEventMiner
 		onRepository: aRepository)
-		mine.
+		mineUntil: [ :event | event isGitHubVersionCheckout ].
 	repositoryAPI := aRepository apiObject.
 	" Create a oneshot filetree repository... "
 	filetreeRepo := GitHubFileTreeRepository new

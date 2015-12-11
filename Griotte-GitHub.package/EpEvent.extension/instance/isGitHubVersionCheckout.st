@@ -1,0 +1,4 @@
+*Griotte-GitHub
+isGitHubVersionCheckout
+
+	^ false
