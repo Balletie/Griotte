@@ -21,7 +21,7 @@ initializeWidgets
 			GrUIRepositoryNode new
 				content: item
 		].
-	self treeList whenSelectedItemChanged: [ :node |
+	self treeList whenSelectedNodeChanged: [ :node |
 		node isReview
 			ifTrue: [
 				selectedReviewChanged cull: node content.

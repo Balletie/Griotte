@@ -1,5 +1,5 @@
 api-events
-whenSelectedItemChanged: aBlock
+whenSelectedNodeChanged: aBlock
 	" Custom override for getting the GrUINodes instead of their contents. "
 
 	self whenSelectedItemsChanged: [ :col |
