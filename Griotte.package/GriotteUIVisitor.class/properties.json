@@ -1,0 +1,16 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "EpTEventVisitor classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GriotteUIVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "EpTEventVisitor",
+	"type" : "normal" }

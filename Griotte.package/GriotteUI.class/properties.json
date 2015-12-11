@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 9/15/2015 15:26",
+	"instvars" : [
+		"list",
+		"diff" ],
+	"name" : "GriotteUI",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

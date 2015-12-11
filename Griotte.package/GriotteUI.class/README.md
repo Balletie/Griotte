@@ -1,0 +1,1 @@
+I am the UI model of Griotte. I use Spec for my implementation.

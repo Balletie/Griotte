@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-TestPackage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GriotteTest",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
