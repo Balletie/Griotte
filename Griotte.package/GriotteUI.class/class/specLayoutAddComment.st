@@ -1,5 +1,5 @@
 spec
-specLayoutAddComment: aCommentListBlock
+specLayoutAddComment
 
 	^ SpecLayout composed newRow: [ :row | 
 		row
@@ -9,7 +9,7 @@ specLayoutAddComment: aCommentListBlock
 				col
 					add: #diff bottom: 0.4;
 					addSplitter;
-					newColumn: aCommentListBlock;
+					add: #commentList;
 					newRow: [ :newComment |
 						newComment add: #comment
 					] height: self inputTextHeight;

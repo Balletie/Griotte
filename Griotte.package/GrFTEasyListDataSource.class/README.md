@@ -1,0 +1,1 @@
+Specialisation of FTEasyListDataSource which just displays the morph, not wrapping it in a FTCellMorph.

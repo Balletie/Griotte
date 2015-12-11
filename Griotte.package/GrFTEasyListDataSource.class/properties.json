@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 10/1/2015 13:39",
+	"instvars" : [
+		 ],
+	"name" : "GrFTEasyListDataSource",
+	"pools" : [
+		 ],
+	"super" : "FTEasyListDataSource",
+	"type" : "normal" }

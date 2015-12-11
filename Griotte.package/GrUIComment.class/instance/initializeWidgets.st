@@ -11,6 +11,6 @@ initializeWidgets
 	self commentText
 		disable.
 	self editIcon
-		label: nil;
-		icon: self class editIcon;
+		label: 'Edit';
+		icon: GriotteUI editIcon;
 		help: 'Edit this comment'.

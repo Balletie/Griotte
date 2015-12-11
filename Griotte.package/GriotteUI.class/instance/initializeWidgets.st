@@ -1,8 +1,7 @@
 initialization
 initializeWidgets
-
-	currentLayout := [ :block | self class specLayout: block ].
-	nextLayout := [ :block | self class specLayoutAddComment: block ].
+	currentLayout := self class specLayout.
+	nextLayout := self class specLayoutAddComment.
 	self
 		title: 'Griotte';
 		instantiateModels: #( 
@@ -24,7 +23,7 @@ initializeWidgets
 		label: 'Save';
 		enabled: false.
 	self cancelButton label: 'Cancel'.
-
+	self showCommentsFor: nil.
 	self focusOrder
 		add: self comment;
 		add: self saveButton.

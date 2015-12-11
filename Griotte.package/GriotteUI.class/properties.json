@@ -6,12 +6,17 @@
 		 ],
 	"commentStamp" : "SkipLentz 9/15/2015 15:26",
 	"instvars" : [
-		"displayComment",
 		"currentLayout",
 		"nextLayout",
-		"commentsColumnBlock" ],
+		"list",
+		"diff",
+		"comment",
+		"newCommentButton",
+		"saveButton",
+		"cancelButton",
+		"commentList" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],
-	"super" : "DynamicComposableModel",
+	"super" : "ComposableModel",
 	"type" : "normal" }
