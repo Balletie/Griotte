@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfGriotte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfGriotte",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
