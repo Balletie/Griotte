@@ -5,7 +5,6 @@
 		"onRepository:" : "SkipLentz 12/1/2015 16:50" },
 	"instance" : {
 		"entryStreamFrom:" : "SkipLentz 12/1/2015 17:16",
-		"initializeWithPackageNames:" : "SkipLentz 11/27/2015 10:52",
 		"initializeWithPackageNamesRetriever:" : "SkipLentz 12/1/2015 16:51",
 		"mineFrom:until:" : "SkipLentz 12/7/2015 15:00",
 		"nextEntryFromEntryStream:" : "SkipLentz 11/30/2015 17:02",
