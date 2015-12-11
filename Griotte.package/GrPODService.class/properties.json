@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 9/29/2015 15:13",
+	"instvars" : [
+		"pod",
+		"timestamp" ],
+	"name" : "GrPODService",
+	"pools" : [
+		 ],
+	"super" : "GrService",
+	"type" : "normal" }

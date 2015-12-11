@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 9/29/2015 14:46",
+	"instvars" : [
+		 ],
+	"name" : "GrService",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

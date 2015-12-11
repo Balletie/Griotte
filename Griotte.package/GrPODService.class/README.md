@@ -1,0 +1,1 @@
+I am a service storing Plain Old Data (POD) in-memory.
