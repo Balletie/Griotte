@@ -3,7 +3,7 @@ initializePresenter
 
 	self list whenSelectedItemsChanged: [ :items | | head last |
 		items ifNotEmpty: [
-			| comment hasComment |
+			| hasComment |
 			head := items first.
 			last := items last.
 			last ifNil: [ ^ self ].
@@ -14,9 +14,9 @@ initializePresenter
 
 			" Set the comment box. "
 			hasComment := false.
-			comment := EpMonitor current log
+			EpMonitor current log
 				commentAt: last
-				ifPresent: [
+				ifPresent: [ :comment |
 					self comment text: comment.
 					hasComment := true.
 				].

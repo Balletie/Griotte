@@ -1,3 +1,9 @@
 actions
 setCommentBox
-	self setCommentBoxOn: self list selectedItem content.
+	| oldLayout |
+	oldLayout := currentLayout.
+	currentLayout := nextLayout.
+	nextLayout := oldLayout.
+
+	self needFullRebuild: false.
+	self buildWithSpecLayout: currentLayout.

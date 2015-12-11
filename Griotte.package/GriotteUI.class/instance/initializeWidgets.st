@@ -10,7 +10,7 @@ initializeWidgets
 		instantiateModels: #( 
 			#list #TreeModel
 			#diff #DiffModel
-			#comment #TextModel
+			#comment #TextInputFieldModel
 			).
 	self list
 		roots: (EpMonitor current log
