@@ -10,4 +10,7 @@ initializeWidgets
 			).
 	self diff
 		showOptions: false.
-	self newCommentButton label: 'New comment'.
+	self newCommentButton
+		label: 'New comment'.
+	self reviewPanel addReviewButton
+		disable.

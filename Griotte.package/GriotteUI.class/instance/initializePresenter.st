@@ -5,9 +5,7 @@ initializePresenter
 		self reviewPanel selectedReview ifNotNil: [ :r |
 			r
 				newComment: 'Test'
-				byUser: (GrLoggedInUser
-					initializeWithService: GrInMemoryService new
-					serviceObject: (GrInMemoryObject initializeWith: 'Skip'))
+				byUser: loggedInUser
 			].
 		commentList refresh
 	].
@@ -17,3 +15,11 @@ initializePresenter
 			self showCommentsFor: item
 		]
 	].
+	self reviewPanel addReviewButton
+		action: [ | review |
+			review := self requestReviewWithInitialGuess:
+				self reviewPanel selectedRepository.
+			review ifNotNil: [
+				self reviewPanel addReview: review
+			].
+		].

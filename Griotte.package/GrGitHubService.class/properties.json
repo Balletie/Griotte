@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "SkipLentz 10/7/2015 10:40",
 	"instvars" : [
-		"api" ],
+		"api",
+		"loggedInUser" ],
 	"name" : "GrGitHubService",
 	"pools" : [
 		 ],

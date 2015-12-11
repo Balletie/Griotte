@@ -1,4 +1,6 @@
 accessing
 loggedInUser
 
-	^ GrGithubServiceObject initializeWith: api user accessor: #login
+	^ GrGithubServiceObject
+		initializeWith: self loggedInUserAPI
+		accessor: #login

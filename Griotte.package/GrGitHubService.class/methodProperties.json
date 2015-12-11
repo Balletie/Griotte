@@ -5,5 +5,8 @@
 		"initializeWithGitHub:" : "SkipLentz 10/7/2015 10:44" },
 	"instance" : {
 		"avatarForUser:" : "SkipLentz 10/7/2015 15:29",
+		"createComment:" : "SkipLentz 10/15/2015 13:56",
 		"initializeWithGitHub:" : "SkipLentz 10/7/2015 10:43",
-		"loggedInUser" : "SkipLentz 10/7/2015 15:38" } }
+		"loggedInRepositories" : "SkipLentz 10/15/2015 11:47",
+		"loggedInUser" : "SkipLentz 10/15/2015 14:05",
+		"loggedInUserAPI" : "SkipLentz 10/15/2015 14:06" } }

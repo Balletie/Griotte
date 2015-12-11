@@ -1,0 +1,17 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 10/14/2015 13:43",
+	"instvars" : [
+		"repositoryDropList",
+		"reviewInputText",
+		"dialogModel",
+		"accepted" ],
+	"name" : "GrUINewReviewDialog",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

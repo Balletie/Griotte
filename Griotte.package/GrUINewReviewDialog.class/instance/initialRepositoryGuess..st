@@ -1,0 +1,4 @@
+accessing
+initialRepositoryGuess: aRepository
+
+	repositoryDropList setSelectedItem: aRepository

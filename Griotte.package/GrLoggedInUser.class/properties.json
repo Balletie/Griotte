@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "Skiplentz 10/2/2015 10:29",
 	"instvars" : [
-		"service" ],
+		"service",
+		"repositories" ],
 	"name" : "GrLoggedInUser",
 	"pools" : [
 		 ],
