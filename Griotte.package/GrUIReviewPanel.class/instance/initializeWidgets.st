@@ -17,12 +17,11 @@ initializeWidgets
 	self treeList
 		multiSelection: false;
 		displayBlock: [ :item | item get ];
-		childrenBlock: [ :item |
-			" TODO: Make specialised TreeNode classes for reviews and repositories "
-			(item class name = 'GrRepository')
-				ifTrue: [ item reviews ]
-				ifFalse: [ #() ] ].
-	self treeList whenSelectedItemChanged: [ :item|
+		rootNodeHolder: [ :item |
+			GrUIRepositoryNode new
+				content: item.
+		].
+	self treeList whenSelectedItemChanged: [ :item |
 		" TODO: Make specialised TreeNode classes for reviews and repositories "
 		item class name = 'GrReview'
 			ifTrue: [

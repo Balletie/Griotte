@@ -1,0 +1,1 @@
+I am a TreeNodeModel meant for displaying review or repository nodes.
