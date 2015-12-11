@@ -6,7 +6,7 @@ initializeWidgets
 	self
 		title: 'Griotte';
 		instantiateModels: #( 
-			#list #TreeModel
+			#list #GrUIReviewPanel
 			#diff #DiffModel
 			#comment #TextInputFieldModel
 			#newCommentButton #ButtonModel
@@ -24,27 +24,7 @@ initializeWidgets
 		label: 'Save';
 		enabled: false.
 	self cancelButton label: 'Cancel'.
-	self list
-		roots: (EpMonitor current log
-			priorEntriesFromHead
-			select: [ :e | e content isCodeChange ]);
-		rootNodeHolder: [ :item |
-			TreeNodeModel new
-				content: item;
-				icon: (item content accept: EpIconVisitor new). ];
-		multiSelection: true;
-		displayBlock: [:item |
-			"TODO: find solution without morph."
-			PanelMorph new
-				changeTableLayout;
-				vResizing: #shrinkWrap;
-				hResizing: #shrinkWrap;
-				listDirection: #leftToRight;
-				cellInset: 3;
-				addAllMorphs: (item content accept: EpDisplayMorphVisitor new);
-				yourself.
-		].
+
 	self focusOrder
-		add: self list;
 		add: self comment;
 		add: self saveButton.

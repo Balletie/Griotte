@@ -1,0 +1,16 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 9/30/2015 17:17",
+	"instvars" : [
+		"titleLabel",
+		"addReviewButton",
+		"treeList" ],
+	"name" : "GrUIReviewPanel",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }
