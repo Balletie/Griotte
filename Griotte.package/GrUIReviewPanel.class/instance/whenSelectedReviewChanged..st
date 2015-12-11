@@ -4,7 +4,7 @@ whenSelectedReviewChanged: aBlock
 		" TODO: Make specialised TreeNode classes for reviews and repositories "
 		item class name = 'GrReview'
 			ifTrue: [
+				aBlock cull: item.
 				selectedReview := item.
-				aBlock cull: item
 			]
 	].

@@ -20,4 +20,9 @@ initializePresenter
 		self toggleCommentBox.
 	].
 	self cancelButton action: [ self toggleCommentBox ].
-	self list whenSelectedReviewChanged: [ :item | self showCommentsFor: item ].
+	self list whenSelectedReviewChanged: [ :item |
+		" Check if it REALLY changed, to avoid unnecessarily creating objects. "
+		item == list selectedReview ifFalse: [
+			self showCommentsFor: item
+		]
+	].

@@ -6,3 +6,9 @@ initializePresenter
 				enable;
 				takeKeyboardFocus.
 		].
+	self commentText
+		acceptBlock: [ :newComment |
+			self commentText disable.
+			self commentModel set: newComment.
+			self setTextMarkup.
+		]

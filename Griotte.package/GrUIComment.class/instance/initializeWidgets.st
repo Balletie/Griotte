@@ -9,6 +9,7 @@ initializeWidgets
 			#editIcon -> #ButtonModel.
 		}.
 	self commentText
+		acceptOnCR: false;
 		disable.
 	self editIcon
 		label: 'Edit';
