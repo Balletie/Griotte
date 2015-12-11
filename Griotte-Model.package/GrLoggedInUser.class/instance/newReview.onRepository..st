@@ -1,4 +1,7 @@
 accessing
 newReview: aString onRepository: aRepository
 
-	^ GrUIReviewPanel createReviewInRepo: aRepository withName: aString
+	^ GrReview
+		byCreator: self
+		onRepository: aRepository
+		withService: (service createReview: aString inRepo: aRepository).
