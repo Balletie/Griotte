@@ -6,9 +6,11 @@ initializeWidgets
 		instantiateModels: {
 			#infoLabel -> #LabelModel.
 			#commentText -> #TextInputFieldModel.
-			#editIcon -> #ImageModel.
+			#editIcon -> #ButtonModel.
 		}.
 	self commentText
 		disable.
 	self editIcon
-		image: self class editIcon.
+		label: nil;
+		icon: self class editIcon;
+		help: 'Edit this comment'.

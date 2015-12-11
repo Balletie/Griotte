@@ -7,7 +7,7 @@ defaultSpec
 			newRow: [ :row |
 				row
 					add: #infoLabel;
-					add: #editIcon width: self editIcon width.
+					add: #editIcon width: self editIcon width + 8.
 			] height: self toolbarHeight;
 			add: #commentText
 	]

@@ -2,13 +2,13 @@
 	"class" : {
 		"author:comment:" : "Skiplentz 9/25/2015 17:14",
 		"author:comment:time:" : "Skiplentz 9/30/2015 13:59",
-		"defaultSpec" : "Skiplentz 9/28/2015 11:03",
+		"defaultSpec" : "Skiplentz 9/30/2015 17:10",
 		"editIcon" : "Skiplentz 9/25/2015 15:40" },
 	"instance" : {
 		"commentText" : "Skiplentz 9/25/2015 10:48",
 		"editIcon" : "Skiplentz 9/25/2015 15:35",
 		"infoLabel" : "Skiplentz 9/28/2015 11:04",
 		"initializePresenter" : "Skiplentz 9/28/2015 12:09",
-		"initializeWidgets" : "Skiplentz 9/28/2015 11:01",
+		"initializeWidgets" : "Skiplentz 9/30/2015 17:03",
 		"setTextMarkup" : "Skiplentz 9/30/2015 13:38",
 		"withComment:" : "Skiplentz 9/30/2015 13:34" } }
