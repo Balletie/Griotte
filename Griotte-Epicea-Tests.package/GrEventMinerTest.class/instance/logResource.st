@@ -1,0 +1,4 @@
+accessing
+logResource
+
+	^ GrEventMinerLogTestResource current

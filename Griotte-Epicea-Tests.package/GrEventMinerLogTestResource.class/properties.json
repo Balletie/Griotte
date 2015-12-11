@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-Epicea-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 12/7/2015 12:22",
+	"instvars" : [
+		"idToLogBuilders" ],
+	"name" : "GrEventMinerLogTestResource",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

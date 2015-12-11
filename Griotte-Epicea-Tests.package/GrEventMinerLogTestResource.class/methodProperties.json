@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getOrBuildLog:" : "SkipLentz 12/7/2015 14:10",
+		"getOrBuildLog:at:" : "SkipLentz 12/7/2015 14:08",
+		"getOrCreateLogBuilder" : "SkipLentz 12/7/2015 14:10",
+		"getOrCreateLogBuilderAt:" : "SkipLentz 12/7/2015 14:31",
+		"oneTriggerWithFourChildren" : "SkipLentz 12/7/2015 14:10",
+		"setUp" : "SkipLentz 12/7/2015 13:46",
+		"tearDown" : "SkipLentz 12/7/2015 13:46" } }
