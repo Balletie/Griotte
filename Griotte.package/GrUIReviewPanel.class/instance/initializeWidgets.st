@@ -14,3 +14,9 @@ initializeWidgets
 		label: nil;
 		icon: GriotteUI addIcon;
 		help: 'Create a new review'.
+	self treeList
+		displayBlock: [ :item | item get ];
+		childrenBlock: [ :item |
+			(item class name = 'GrRepository')
+				ifTrue: [ item reviews ]
+				ifFalse: [ #() ] ].
