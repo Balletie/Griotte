@@ -5,8 +5,8 @@ initializeWidgets
 		title: 'Griotte';
 		instantiateModels: { 
 			#list -> #TreeModel.
-			#diff -> #DiffModel.
-	}.
+			#diff -> #DiffModel
+			}.
 	self list
 		roots: (EpMonitor current log
 			priorEntriesFromHead
