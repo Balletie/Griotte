@@ -7,12 +7,11 @@
 	"commentStamp" : "Skiplentz 9/25/2015 10:31",
 	"instvars" : [
 		"commentText",
-		"authorLabel",
-		"authorString",
-		"commentString",
-		"authorPreLabel",
+		"infoLabel",
 		"editIcon",
-		"timeLabel" ],
+		"commentString",
+		"authorString",
+		"timeStamp" ],
 	"name" : "GrUIComment",
 	"pools" : [
 		 ],

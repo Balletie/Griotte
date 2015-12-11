@@ -1,6 +1,9 @@
 actions
 showCommentsFor: anItem
 	| commentModels counter |
+
+	self needFullRebuild: false.
+
 	counter := 1.
 	commentModels := {
 		GrUIComment author: 'Skip Lentz' comment: 'Hello, nice job.
@@ -20,5 +23,4 @@ Bye.'.
 		]
 	].
 
-	self needFullRebuild: false.
 	self buildWithSpecLayout: (currentLayout value: commentsColumnBlock).

@@ -21,7 +21,7 @@ initializePresenter
 			self diff
 				leftText: (last content accept: EpOldStateVisitor new);
 				rightText: (head content accept: EpNewStateVisitor new).
-
+			"FIXME: for some reason this gets called 3 times."
 			self showCommentsFor: last.
 		].
 	]

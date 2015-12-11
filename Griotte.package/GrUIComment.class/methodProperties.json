@@ -2,13 +2,12 @@
 	"class" : {
 		"author:comment:" : "Skiplentz 9/25/2015 17:14",
 		"author:comment:time:" : "Skiplentz 9/25/2015 15:50",
-		"defaultSpec" : "Skiplentz 9/25/2015 15:56",
+		"defaultSpec" : "Skiplentz 9/28/2015 11:03",
 		"editIcon" : "Skiplentz 9/25/2015 15:40" },
 	"instance" : {
-		"authorLabel" : "Skiplentz 9/25/2015 15:04",
-		"authorPreLabel" : "Skiplentz 9/25/2015 15:08",
 		"commentText" : "Skiplentz 9/25/2015 10:48",
 		"editIcon" : "Skiplentz 9/25/2015 15:35",
-		"initializeWidgets" : "Skiplentz 9/25/2015 16:41",
-		"timeLabel" : "Skiplentz 9/25/2015 15:56",
-		"withAuthor:comment:time:" : "Skiplentz 9/25/2015 17:13" } }
+		"infoLabel" : "Skiplentz 9/28/2015 11:04",
+		"initializeWidgets" : "Skiplentz 9/28/2015 11:01",
+		"setTextMarkup" : "Skiplentz 9/28/2015 11:43",
+		"withAuthor:comment:time:" : "Skiplentz 9/28/2015 10:58" } }

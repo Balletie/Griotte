@@ -6,9 +6,7 @@ defaultSpec
 		col
 			newRow: [ :row |
 				row
-					add: #authorPreLabel width: 75;
-					add: #authorLabel;
-					add: #timeLabel;
+					add: #infoLabel;
 					add: #editIcon width: self editIcon width.
 			] height: self toolbarHeight;
 			add: #commentText
