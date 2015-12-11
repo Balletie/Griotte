@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SkipLentz 11/9/2015 13:49",
+	"commentStamp" : "SkipLentz 11/27/2015 10:58",
 	"instvars" : [
 		"log",
-		"packageNames",
-		"packageReductionAsserter" ],
+		"packageNames" ],
 	"name" : "GrEventMiner",
 	"pools" : [
 		 ],

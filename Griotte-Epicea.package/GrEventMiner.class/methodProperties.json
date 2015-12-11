@@ -3,10 +3,8 @@
 		"onPackageNames:" : "SkipLentz 11/9/2015 11:34",
 		"onRepository:" : "SkipLentz 11/9/2015 11:33" },
 	"instance" : {
-		"initializeWithPackageNames:" : "SkipLentz 11/12/2015 15:32",
+		"initializeWithPackageNames:" : "SkipLentz 11/27/2015 10:52",
 		"initializeWithRepository:" : "SkipLentz 11/12/2015 15:35",
-		"mine" : "SkipLentz 11/27/2015 10:43",
+		"mineUntil:" : "SkipLentz 11/27/2015 11:01",
 		"nextEntryFromEntryStream:" : "SkipLentz 11/27/2015 10:47",
-		"onLog:" : "SkipLentz 11/9/2015 11:27",
-		"reducePackageAsserter" : "SkipLentz 11/12/2015 15:34",
-		"reducePackagesIf:" : "SkipLentz 11/12/2015 15:33" } }
+		"onLog:" : "SkipLentz 11/9/2015 11:27" } }

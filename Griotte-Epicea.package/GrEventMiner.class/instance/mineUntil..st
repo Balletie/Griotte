@@ -1,7 +1,7 @@
 executing
-mine
-	" Mine the relevant IDE events and return them. "
-
+mineUntil: aBooleanBlock
+	" Mine the relevant IDE events until aBooleanBlock returns true
+	  and return them. "
 	| latestEntries mined visitor entryStream |
 	latestEntries := log priorEntriesFromHead.
 	entryStream := latestEntries readStream.
@@ -15,11 +15,10 @@ mine
 			ifFalse: [ entryStream skipTo: candidateEntry ]
 			ifTrue: [
 				mined add: candidateEntry.
-				" Add also the triggered events. If candidateEntry is not a
-				  trigger event, this is empty. "
+				" Add also the triggered events. If candidateEntry is not a trigger
+				  event, this is empty. "
 				mined addAll: (entryStream upTo: candidateEntry).
-				" Reduce the amount of relevant entries if this is a versioning event.
-				  Don't mine for events for these packages from now. "
-				(self reducePackageAsserter value: event)
+				" If aBooleanBlock, don't mine for events for these packages from now. "
+				(aBooleanBlock value: event)
 					ifTrue: [ visitor subtractPackagesByPackagesFrom: event ] ] ].
 	^ mined
