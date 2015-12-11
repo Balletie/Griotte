@@ -3,7 +3,9 @@ showCommentsFor: anItem
 	| commentModels counter |
 	counter := 1.
 	commentModels := {
-		GrUIComment author: 'Skip Lentz' comment: 'Hello, nice job.'.
+		GrUIComment author: 'Skip Lentz' comment: 'Hello, nice job.
+Blablabla, I have multiple lines.
+Bye.'.
 		GrUIComment author: 'Martin Dias' comment: 'Thanks man, I worked very hard on this so it is nice to hear.'.
 	}.
 

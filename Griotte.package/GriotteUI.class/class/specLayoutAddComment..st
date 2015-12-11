@@ -3,17 +3,16 @@ specLayoutAddComment: aCommentListBlock
 
 	^ SpecLayout composed newRow: [ :row | 
 		row
-			add: #list;
+			add: #list width: 400;
 			addSplitter;
 			newColumn: [ :col |
 				col
-					add: #diff;
+					add: #diff bottom: 0.4;
 					addSplitter;
 					newColumn: aCommentListBlock;
-					add: #comment
-						origin: 0@0 corner: 1@0
-						offsetOrigin: 0@0
-						offsetCorner: 0@(self inputTextHeight);
+					newRow: [ :newComment |
+						newComment add: #comment
+					] height: self inputTextHeight;
 					newRow: [ :buttons |
 						buttons
 							add: #saveButton;

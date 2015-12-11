@@ -3,7 +3,7 @@ specLayout: aCommentListBlock
 
 	^ SpecLayout composed newRow: [ :row | 
 		row
-			add: #list;
+			add: #list width: 400;
 			addSplitter;
 			newColumn: [ :col |
 				col

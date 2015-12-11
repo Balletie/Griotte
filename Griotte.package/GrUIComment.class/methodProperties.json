@@ -1,9 +1,14 @@
 {
 	"class" : {
-		"author:comment:" : "Skiplentz 9/25/2015 12:17",
-		"defaultSpec" : "Skiplentz 9/25/2015 10:48" },
+		"author:comment:" : "Skiplentz 9/25/2015 17:14",
+		"author:comment:time:" : "Skiplentz 9/25/2015 15:50",
+		"defaultSpec" : "Skiplentz 9/25/2015 15:56",
+		"editIcon" : "Skiplentz 9/25/2015 15:40" },
 	"instance" : {
-		"author" : "Skiplentz 9/25/2015 10:39",
+		"authorLabel" : "Skiplentz 9/25/2015 15:04",
+		"authorPreLabel" : "Skiplentz 9/25/2015 15:08",
 		"commentText" : "Skiplentz 9/25/2015 10:48",
-		"initializeWidgets" : "Skiplentz 9/25/2015 12:12",
-		"withAuthor:comment:" : "Skiplentz 9/25/2015 12:16" } }
+		"editIcon" : "Skiplentz 9/25/2015 15:35",
+		"initializeWidgets" : "Skiplentz 9/25/2015 16:41",
+		"timeLabel" : "Skiplentz 9/25/2015 15:56",
+		"withAuthor:comment:time:" : "Skiplentz 9/25/2015 17:13" } }
