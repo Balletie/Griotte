@@ -14,7 +14,8 @@
 		"newCommentButton",
 		"saveButton",
 		"cancelButton",
-		"commentList" ],
+		"commentList",
+		"windowModel" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],

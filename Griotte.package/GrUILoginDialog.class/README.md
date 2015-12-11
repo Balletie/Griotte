@@ -1,0 +1,1 @@
+Login dialog for asking username and password to a user.

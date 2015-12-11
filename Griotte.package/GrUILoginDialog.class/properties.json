@@ -1,0 +1,18 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 10/2/2015 18:01",
+	"instvars" : [
+		"usernameLabel",
+		"usernameText",
+		"passLabel",
+		"passText",
+		"okOrCancel" ],
+	"name" : "GrUILoginDialog",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
-spec
+specs
 defaultSpec
 	<spec: #default>
 
