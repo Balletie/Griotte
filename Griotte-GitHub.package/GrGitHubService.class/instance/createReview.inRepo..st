@@ -1,9 +1,8 @@
 factory methods
 createReview: aTitle inRepo: aRepository
-	| repositoryAPI events checkoutEvent commitEvent pr treeResponse retriever |
+	| repositoryAPI events checkoutEvent commitEvent pr retriever |
 	repositoryAPI := aRepository serviceObject apiObject.
 	retriever := self packageNamesRetrieverForRepo: repositoryAPI.
-	" TODO: Figure out package names. "
 	events := (GrEventMiner onPackageNamesRetriever: retriever)
 		mineFrom: [ :event | event isGitHubVersionCommit and: [
 				event repositoryUrl = repositoryAPI url ] ]
