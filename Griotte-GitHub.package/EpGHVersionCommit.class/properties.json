@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-GitHub",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 11/30/2015 16:53",
+	"instvars" : [
+		"ref",
+		"repositoryUrl" ],
+	"name" : "EpGHVersionCommit",
+	"pools" : [
+		 ],
+	"super" : "EpEvent",
+	"type" : "normal" }

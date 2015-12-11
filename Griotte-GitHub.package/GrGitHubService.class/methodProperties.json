@@ -5,8 +5,9 @@
 		"initializeWithGitHub:" : "SkipLentz 10/7/2015 10:44" },
 	"instance" : {
 		"avatarForUser:" : "SkipLentz 10/7/2015 15:29",
+		"branchNameFromReviewTitle:" : "SkipLentz 11/27/2015 11:48",
 		"createComment:" : "SkipLentz 10/15/2015 13:56",
-		"createReview:inRepo:" : "SkipLentz 11/27/2015 11:22",
+		"createReview:inRepo:" : "SkipLentz 11/30/2015 17:29",
 		"initializeWithGitHub:" : "SkipLentz 11/4/2015 17:47",
 		"loggedInRepositories" : "SkipLentz 10/15/2015 11:47",
 		"loggedInUser" : "SkipLentz 10/15/2015 14:05",

@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"isGitHubVersionCheckout" : "SkipLentz 11/27/2015 10:59" } }
+		"isGitHubVersionCheckout" : "SkipLentz 11/27/2015 10:59",
+		"isGitHubVersionCommit" : "SkipLentz 11/30/2015 16:50" } }

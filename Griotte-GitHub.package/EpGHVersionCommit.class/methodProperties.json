@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"ref:packageNames:repositoryUrl:" : "SkipLentz 11/30/2015 16:48",
+		"ref:repositoryUrl:" : "SkipLentz 11/30/2015 17:15" },
+	"instance" : {
+		"accept:" : "SkipLentz 11/30/2015 16:51",
+		"initializeWithRef:repositoryUrl:" : "SkipLentz 11/30/2015 17:14",
+		"isGitHubVersionCommit" : "SkipLentz 11/30/2015 16:50",
+		"ref" : "SkipLentz 11/30/2015 16:51",
+		"repositoryUrl" : "SkipLentz 11/30/2015 16:51" } }
