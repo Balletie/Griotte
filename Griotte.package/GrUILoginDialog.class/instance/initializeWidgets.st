@@ -13,9 +13,12 @@ initializeWidgets
 
 	usernameLabel
 		label: 'Username:'.
+	usernameText
+		autoAccept: true.
 	passLabel
 		label: 'Password:'.
 	passText
+		autoAccept: true;
 		beEncrypted.
 	self focusOrder
 		add: usernameText;

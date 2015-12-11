@@ -1,4 +1,5 @@
 accessing
 toolbar: aToolbar
 	aToolbar hResizing: #shrinkWrap.
-	self replacePane: menuBox with: aToolbar.
+	self replacePane: currentToolbar with: aToolbar.
+	currentToolbar := aToolbar.
