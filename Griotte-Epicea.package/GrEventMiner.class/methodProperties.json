@@ -5,7 +5,8 @@
 	"instance" : {
 		"initializeWithPackageNames:" : "SkipLentz 11/12/2015 15:32",
 		"initializeWithRepository:" : "SkipLentz 11/12/2015 15:35",
-		"mine" : "SkipLentz 11/13/2015 11:48",
+		"mine" : "SkipLentz 11/27/2015 10:43",
+		"nextEntryFromEntryStream:" : "SkipLentz 11/27/2015 10:40",
 		"onLog:" : "SkipLentz 11/9/2015 11:27",
 		"reducePackageAsserter" : "SkipLentz 11/12/2015 15:34",
 		"reducePackagesIf:" : "SkipLentz 11/12/2015 15:33" } }
