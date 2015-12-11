@@ -20,5 +20,5 @@ testMine
 		mineFrom: [ :event | event = end ]
 		until: [ :event | event = start ].
 	self assert: minedEvents size equals: 4.
-	self assert: minedEvents first == end.
-	self assert: minedEvents last == start.
+	self assert: minedEvents first content equals: end.
+	self assert: minedEvents last content equals: start.
