@@ -9,8 +9,6 @@
 		"creator",
 		"topComments",
 		"groups",
-		"start",
-		"end",
 		"repository" ],
 	"name" : "GrReview",
 	"pools" : [
