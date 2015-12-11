@@ -5,8 +5,7 @@ nextEntryFromEntryStream: entryStream
 	| candidateEntry |
 	candidateEntry := entryStream peek.
 	[ candidateEntry tags includesKey: EpLog triggererReferenceKey ]
-		whileTrue:
-			[ | ref |
+		whileTrue: [ | ref |
 			ref := candidateEntry tags at: EpLog triggererReferenceKey.
 			candidateEntry := log entryFor: ref ].
 	candidateEntry := candidateEntry.
