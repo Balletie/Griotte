@@ -1,12 +1,7 @@
 accessing
 loginMenuForUser: aUserString withSubMenu: subMenu withAction: aBlock
-	^ MenuModel new addGroup: [ :group | 
-		group addItem: [ :item | 
-			item
-				name: aUserString;
-				description: 'Currently logged in';
-				icon: Smalltalk ui icons helpIcon;
-				action: aBlock;
-				subMenu: subMenu.
-		]
-	]
+	^ self
+		loginMenuForUser: aUserString
+		withIcon: Smalltalk ui icons helpIcon
+		withSubMenu: subMenu
+		withAction: aBlock

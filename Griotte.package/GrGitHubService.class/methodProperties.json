@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"forAccessToken:" : "SkipLentz 10/7/2015 14:16",
+		"forUsername:password:" : "SkipLentz 10/7/2015 14:17",
+		"initializeWithGitHub:" : "SkipLentz 10/7/2015 10:44" },
+	"instance" : {
+		"avatarForUser:" : "SkipLentz 10/7/2015 15:29",
+		"initializeWithGitHub:" : "SkipLentz 10/7/2015 10:43",
+		"loggedInUser" : "SkipLentz 10/7/2015 15:38" } }

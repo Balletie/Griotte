@@ -10,8 +10,11 @@ requestLogin
 			password: password
 			onServiceClass: self class serviceClass.
 		self isDisplayed ifTrue: [
-			windowModel toolbar: (self loginMenuForUser: username withAction: [ self inform: 'Hai' ])
+			windowModel toolbar: (self
+				loginMenuForUser: loggedInUser get
+				withIcon: (loggedInUser avatar get scaledToSize: 16@16)
+				withAction: [ self inform: 'Hai' ])
 		].
-		self title: 'Griotte - Logged in as ' , username.
+		self title: 'Griotte - Logged in as ' , loggedInUser get.
 	].
 	loginDialog openWithSpec.

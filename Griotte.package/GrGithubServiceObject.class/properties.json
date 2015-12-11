@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "Skiplentz 10/1/2015 17:36",
 	"instvars" : [
-		"api" ],
+		"apiObject",
+		"accessor" ],
 	"name" : "GrGithubServiceObject",
 	"pools" : [
 		 ],
