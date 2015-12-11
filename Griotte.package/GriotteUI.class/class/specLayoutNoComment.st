@@ -1,5 +1,5 @@
 spec
-specLayout
+specLayoutNoComment
 	<spec: #default>
 
 	^ SpecLayout composed newRow: [ :row | 
