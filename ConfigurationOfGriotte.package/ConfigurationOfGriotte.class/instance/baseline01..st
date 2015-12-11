@@ -4,11 +4,17 @@ baseline01: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
+		spec repository: 'http://smalltalkhub.com/mc/Balletie/Griotte/main/'.
 		spec project: 'GitHub' with: [
 				spec
 					className: #ConfigurationOfGitHub;
 					versionString: #'stable';
 					repository: 'http://smalltalkhub.com/mc/Balletie/GitHub/main/' ].
+		spec project: 'Epicea' with: [
+				spec
+					className: #ConfigurationOfEpicea;
+					versionString: #'stable';
+					repository: 'http://smalltalkhub.com/mc/MartinDias/Epicea/main/' ].
 		spec package: 'Griotte'.
 		spec package: 'Widget-Extensions-Balletie' with: [
 			spec file: 'Widget-Extensions-Balletie-SkipLentz.1'.
