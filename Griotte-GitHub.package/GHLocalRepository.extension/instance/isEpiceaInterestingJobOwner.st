@@ -1,0 +1,4 @@
+*Griotte-GitHub
+isEpiceaInterestingJobOwner
+
+	^ true
