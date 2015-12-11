@@ -1,13 +1,14 @@
 factory methods
 createReview: aTitle inRepo: aRepository
-	| repositoryAPI events commitEvent pr retriever |
+	| repositoryAPI commitEvent pr retriever |
 	repositoryAPI := aRepository serviceObject apiObject.
 	retriever := self packageNamesRetrieverForRepo: repositoryAPI.
 	" Get the last commit event. "
-	events := (GrEventMiner onPackageNamesRetriever: retriever)
-		entryStreamFrom: [ :event | event isGitHubVersionCommit and: [
-				event repositoryUrl = repositoryAPI url ] ].
-	commitEvent := events peek content.
+	commitEvent := EpMonitor current log
+		fromHeadDetect: [ :event |
+			event isGitHubVersionCommit and: [
+				event repositoryUrl = repositoryAPI url ] ]
+		ifNotFound: [ ^ self ].
 	commitEvent ref = ('heads/' , repositoryAPI defaultBranch)
 		ifTrue: [ ^ self ].
 	" Create new PR "
