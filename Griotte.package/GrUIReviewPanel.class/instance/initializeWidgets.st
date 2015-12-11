@@ -11,7 +11,7 @@ initializeWidgets
 
 	self titleLabel label: 'Reviews'.
 	self addReviewButton
-		label: nil;
+		label: 'New Review';
 		icon: GriotteUI addIcon;
 		help: 'Create a new review'.
 	self treeList

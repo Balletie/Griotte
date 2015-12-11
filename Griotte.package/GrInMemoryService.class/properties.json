@@ -4,11 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "Skiplentz 9/30/2015 13:07",
+	"commentStamp" : "Skiplentz 10/2/2015 10:46",
 	"instvars" : [
-		"object",
-		"createdTimestamp",
-		"editTimestamp" ],
+		 ],
 	"name" : "GrInMemoryService",
 	"pools" : [
 		 ],

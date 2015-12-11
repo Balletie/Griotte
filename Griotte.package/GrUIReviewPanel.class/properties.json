@@ -8,7 +8,8 @@
 	"instvars" : [
 		"titleLabel",
 		"addReviewButton",
-		"treeList" ],
+		"treeList",
+		"selectedItem" ],
 	"name" : "GrUIReviewPanel",
 	"pools" : [
 		 ],

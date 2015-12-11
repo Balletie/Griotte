@@ -5,7 +5,15 @@ initializePresenter
 			ifTrue: [ self saveButton disable ]
 			ifFalse: [ self saveButton enable ].
 	].
-	self newCommentButton action: [ self toggleCommentBox ].
+	self newCommentButton action: [
+		self list selectedReview ifNotNil: [ :r |
+			r
+				newComment: 'Test'
+				byUser: (GrLoggedInUser
+					initializeWithService: GrInMemoryService new
+					serviceObject: (GrInMemoryObject initializeWith: 'Skip'))
+			]
+	].
 	self saveButton action: [
 		"self commentList items: (self commentList listItems copyWith: self comment text)."
 		self toggleCommentBox.

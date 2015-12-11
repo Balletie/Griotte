@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "Skiplentz 10/2/2015 10:45",
+	"commentStamp" : "Skiplentz 10/1/2015 17:36",
 	"instvars" : [
-		 ],
-	"name" : "GrService",
+		"api" ],
+	"name" : "GrGithubServiceObject",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "GrServiceObject",
 	"type" : "normal" }

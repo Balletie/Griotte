@@ -1,3 +1,3 @@
 accessing
 get
-	^ service get
+	^ serviceObject get

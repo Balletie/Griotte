@@ -1,12 +1,12 @@
 examples-initialization
 createComment: aCommentString by: anAuthorString at: aDateAndTime
 	| userServ commentServ |
-	commentServ := GrInMemoryService
+	commentServ := GrInMemoryObject
 		initializeWith: aCommentString
 		timestamp: aDateAndTime.
-	userServ := GrInMemoryService
+	userServ := GrInMemoryObject
 		initializeWith: anAuthorString
 		timestamp: DateAndTime now - 2 years.
 	^ GrComment
-		withUser: (GrUser initializeWithService: userServ)
+		withUser: (GrUser initializeWithServiceObject: userServ)
 		service: commentServ

@@ -1,3 +1,3 @@
 accessing
 editTime
-	^ service editTime
+	^ serviceObject editTime

@@ -1,4 +1,4 @@
 initialization
 withUser: aUser service: aService
-	^ (self initializeWithService: aService)
+	^ (self initializeWithServiceObject: aService)
 		initializeWithUser: aUser.

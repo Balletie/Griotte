@@ -1,5 +1,5 @@
-I am an abstract superclass for services which contain data for Griotte. I provide an access point for just one unit of data, and the timestamp of its creation.
+I represent a service for storing and creating objects. My subclasses specify where these objects are created and stored. This can be on a remote location, or local.
 
-My main responsibility is encapsulating the logic for creating, storing, updating and accessing the data. In the case of external services such as Github, I either encapsulate their API or delegate to it.
+My responsibility is allowing collaborators to create objects stored on a service
 
-My collaborators are GrServiceMappedObjects
+My main collaborator is GrLoggedInUser, which uses me to create reviews and comments.

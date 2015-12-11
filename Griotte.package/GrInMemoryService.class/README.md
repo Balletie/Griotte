@@ -1,1 +1,1 @@
-I am a service storing the data in-memory. I am the most trivial implementation of a GrService.
+I am a service which stores and creates objects in-memory. I am the most trivial implementation of GrService.

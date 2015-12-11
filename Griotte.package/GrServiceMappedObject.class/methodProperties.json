@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"initializeWithService:" : "Skiplentz 9/30/2015 13:37" },
+		"initializeWithServiceObject:" : "Skiplentz 10/2/2015 11:08" },
 	"instance" : {
-		"createdTime" : "Skiplentz 9/30/2015 13:18",
-		"editTime" : "Skiplentz 9/30/2015 13:20",
-		"get" : "Skiplentz 9/30/2015 11:35",
-		"initializeWithService:" : "Skiplentz 9/29/2015 14:49",
-		"service" : "Skiplentz 9/30/2015 11:34",
-		"set:" : "Skiplentz 9/30/2015 11:35" } }
+		"createdTime" : "Skiplentz 10/2/2015 10:26",
+		"editTime" : "Skiplentz 10/2/2015 10:26",
+		"get" : "Skiplentz 10/2/2015 10:26",
+		"initializeWithServiceObject:" : "Skiplentz 10/2/2015 11:08",
+		"serviceObject" : "Skiplentz 10/2/2015 11:04",
+		"set:" : "Skiplentz 10/2/2015 10:26" } }

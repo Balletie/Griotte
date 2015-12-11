@@ -1,10 +1,11 @@
 {
 	"class" : {
-		"createReview" : "Skiplentz 10/1/2015 16:28",
-		"defaultSpec" : "Skiplentz 9/30/2015 17:43" },
+		"createReview" : "Skiplentz 10/2/2015 11:08",
+		"defaultSpec" : "Skiplentz 10/2/2015 11:27" },
 	"instance" : {
 		"addReviewButton" : "Skiplentz 9/30/2015 17:38",
-		"initializePresenter" : "Skiplentz 10/1/2015 16:28",
-		"initializeWidgets" : "Skiplentz 10/1/2015 16:30",
+		"initializePresenter" : "Skiplentz 10/2/2015 11:24",
+		"initializeWidgets" : "Skiplentz 10/2/2015 11:26",
+		"selectedReview" : "Skiplentz 10/2/2015 11:24",
 		"titleLabel" : "Skiplentz 9/30/2015 17:28",
-		"treeList" : "Skiplentz 9/30/2015 17:28" } }
+		"treeList" : "Skiplentz 10/2/2015 10:59" } }

@@ -1,3 +1,3 @@
 accessing
 set: anObject
-	service set: anObject.
+	serviceObject set: anObject.
