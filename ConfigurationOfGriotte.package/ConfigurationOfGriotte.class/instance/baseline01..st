@@ -12,7 +12,7 @@ baseline01: spec
 			import: 'GitHub';
 			configuration: 'Epicea' with: [
 				spec
-					versionString: #'stable';
+					versionString: #'development';
 					repository: 'http://smalltalkhub.com/mc/MartinDias/Epicea/main/' ].
 
 		spec
