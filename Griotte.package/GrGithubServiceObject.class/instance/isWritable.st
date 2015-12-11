@@ -1,4 +1,4 @@
 testing
 isWritable
 
-	^ apiObject respondsTo: accessor , #':'
+	^ apiObject respondsTo: accessor asMutator
