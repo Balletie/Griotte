@@ -4,5 +4,5 @@
 	"instance" : {
 		"logResource" : "SkipLentz 12/7/2015 14:19",
 		"minerOnPackageNamesRetriever:onLogBuiltBy:" : "SkipLentz 12/7/2015 15:51",
-		"testMine" : "SkipLentz 12/8/2015 15:32",
-		"testMineEmptyLog" : "SkipLentz 12/7/2015 15:53" } }
+		"testMineFromUntil" : "SkipLentz 12/8/2015 16:00",
+		"testMineFromUntilEmptyLog" : "SkipLentz 12/8/2015 16:01" } }

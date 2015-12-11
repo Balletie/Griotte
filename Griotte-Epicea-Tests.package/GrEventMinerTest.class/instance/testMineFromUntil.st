@@ -1,5 +1,5 @@
 tests
-testMine
+testMineFromUntil
 	| start end miner minedEvents |
 	miner := self
 		minerOnPackageNamesRetriever: [ :dummy | #('Griotte-Epicea') ]

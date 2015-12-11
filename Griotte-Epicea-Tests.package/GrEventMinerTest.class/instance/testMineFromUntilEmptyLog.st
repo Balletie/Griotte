@@ -1,5 +1,5 @@
 tests
-testMineEmptyLog
+testMineFromUntilEmptyLog
 	| mined miner |
 	miner := self
 		minerOnPackageNamesRetriever: [ :dummy | #('Griotte-Epicea') ]
