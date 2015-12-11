@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 10/12/2015 17:52",
+	"instvars" : [
+		 ],
+	"name" : "GrUITreeModel",
+	"pools" : [
+		 ],
+	"super" : "TreeModel",
+	"type" : "normal" }

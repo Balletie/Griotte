@@ -1,0 +1,1 @@
+Override for getting the item wrapped in a TreeNodeModel in whenSelectedItemChanged:

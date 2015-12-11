@@ -6,7 +6,7 @@ initializeWidgets
 		instantiateModels: {
 			#titleLabel -> #LabelModel.
 			#addReviewButton -> #ButtonModel.
-			#treeList -> #TreeModel.
+			#treeList -> #GrUITreeModel.
 		}.
 
 	self titleLabel label: 'Reviews'.
@@ -19,16 +19,15 @@ initializeWidgets
 		displayBlock: [ :item | item get ];
 		rootNodeHolder: [ :item |
 			GrUIRepositoryNode new
-				content: item.
+				content: item
 		].
-	self treeList whenSelectedItemChanged: [ :item |
-		" TODO: Make specialised TreeNode classes for reviews and repositories "
-		item class name = 'GrReview'
+	self treeList whenSelectedItemChanged: [ :node |
+		node isReview
 			ifTrue: [
-				selectedReviewChanged cull: item.
-				selectedReview := item.
+				selectedReviewChanged cull: node content.
+				selectedReview := node content.
 			]
 			ifFalse: [
-				selectedRepository := item.
+				selectedRepository := node content.
 			]
 	].
