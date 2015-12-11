@@ -23,7 +23,6 @@ initializeWidgets
 		label: 'Save';
 		enabled: false.
 	self cancelButton label: 'Cancel'.
-	self showCommentsFor: nil.
 	self focusOrder
 		add: self comment;
 		add: self saveButton.

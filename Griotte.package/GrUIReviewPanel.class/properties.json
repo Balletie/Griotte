@@ -9,7 +9,7 @@
 		"titleLabel",
 		"addReviewButton",
 		"treeList",
-		"selectedItem" ],
+		"selectedReview" ],
 	"name" : "GrUIReviewPanel",
 	"pools" : [
 		 ],

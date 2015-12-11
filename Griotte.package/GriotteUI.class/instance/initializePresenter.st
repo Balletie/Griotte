@@ -12,10 +12,12 @@ initializePresenter
 				byUser: (GrLoggedInUser
 					initializeWithService: GrInMemoryService new
 					serviceObject: (GrInMemoryObject initializeWith: 'Skip'))
-			]
+			].
+		commentList refresh
 	].
 	self saveButton action: [
 		"self commentList items: (self commentList listItems copyWith: self comment text)."
 		self toggleCommentBox.
 	].
 	self cancelButton action: [ self toggleCommentBox ].
+	self list whenSelectedReviewChanged: [ :item | self showCommentsFor: item ].
