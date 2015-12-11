@@ -1,13 +1,13 @@
 {
 	"class" : {
 		"open" : "SkipLentz 9/22/2015 15:46",
-		"specLayoutComment" : "SkipLentz 9/23/2015 11:43",
-		"specLayoutNoComment" : "SkipLentz 9/23/2015 11:40" },
+		"specLayoutComment" : "Skiplentz 9/24/2015 17:11",
+		"specLayoutNoComment" : "Skiplentz 9/24/2015 17:14" },
 	"instance" : {
 		"displayComment" : "SkipLentz 9/23/2015 12:05",
 		"displayComment:" : "SkipLentz 9/23/2015 12:06",
 		"initialExtent" : "SkipLentz 9/22/2015 15:43",
-		"initializePresenter" : "Skiplentz 9/23/2015 14:34",
-		"initializeWidgets" : "Skiplentz 9/23/2015 14:40",
+		"initializePresenter" : "Skiplentz 9/24/2015 18:23",
+		"initializeWidgets" : "Skiplentz 9/24/2015 18:26",
 		"open" : "Skiplentz 9/23/2015 14:10",
-		"setCommentBox" : "Skiplentz 9/23/2015 14:36" } }
+		"toggleCommentBox" : "Skiplentz 9/24/2015 17:56" } }

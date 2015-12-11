@@ -6,5 +6,14 @@ specLayoutNoComment
 		row
 			add: #list;
 			addSplitter;
-			add: #diff
+			newColumn: [ :col |
+				col
+					add: #diff;
+					addSplitter;
+					add: #commentList;
+					newRow: [ :buttons |
+						buttons
+							add: #newCommentButton.
+					] height: self buttonHeight.
+			].
 		].

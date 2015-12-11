@@ -1,9 +1,19 @@
 initialization
 initializePresenter
-
-	self list whenSelectedItemsChanged: [ :items | | head last |
+	self comment textHolder whenChangedDo: [ :commentText |
+		commentText isEmpty
+			ifTrue: [ self saveButton disable ]
+			ifFalse: [ self saveButton enable ].
+	].
+	self newCommentButton action: [ self toggleCommentBox ].
+	self saveButton action: [
+		self commentList items: (self commentList listItems copyWith: self comment text).
+		self toggleCommentBox.
+	].
+	self cancelButton action: [ self toggleCommentBox ].
+	self list whenSelectedItemsChanged: [ :items |
 		items ifNotEmpty: [
-			| hasComment |
+			| head last |
 			head := items first.
 			last := items last.
 			last ifNil: [ ^ self ].
@@ -11,15 +21,5 @@ initializePresenter
 			self diff
 				leftText: (last content accept: EpOldStateVisitor new);
 				rightText: (head content accept: EpNewStateVisitor new).
-
-			" Set the comment box. "
-			hasComment := false.
-			EpMonitor current log
-				commentAt: last
-				ifPresent: [ :comment |
-					self comment text: comment.
-					hasComment := true.
-				].
-			self displayComment: hasComment.
 		].
 	]

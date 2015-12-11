@@ -2,7 +2,7 @@ initialization
 initializeWidgets
 
 	displayComment := IdentityNewValueHolder value: false.
-	displayComment whenChangedSend: #setCommentBox to: self.
+	displayComment whenChangedSend: #toggleCommentBox to: self.
 	currentLayout := self class specLayoutNoComment.
 	nextLayout := self class specLayoutComment.
 	self
@@ -10,8 +10,23 @@ initializeWidgets
 		instantiateModels: #( 
 			#list #TreeModel
 			#diff #DiffModel
+			#commentList #ListModel
 			#comment #TextInputFieldModel
+			#newCommentButton #ButtonModel
+			#saveButton #ButtonModel
+			#cancelButton #ButtonModel
 			).
+	self diff
+		showOptions: false.
+	self comment
+		ghostText: 'Add a comment here...';
+		autoAccept: true;
+		acceptOnCR: false.
+	self newCommentButton label: 'New comment'.
+	self saveButton
+		label: 'Save';
+		enabled: false.
+	self cancelButton label: 'Cancel'.
 	self list
 		roots: (EpMonitor current log
 			priorEntriesFromHead
@@ -32,3 +47,7 @@ initializeWidgets
 				addAllMorphs: (item content accept: EpDisplayMorphVisitor new);
 				yourself.
 		].
+	self focusOrder
+		add: self list;
+		add: self comment;
+		add: self saveButton.

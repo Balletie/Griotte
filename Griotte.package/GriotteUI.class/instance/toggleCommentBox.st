@@ -1,5 +1,5 @@
 actions
-setCommentBox
+toggleCommentBox
 	| oldLayout |
 	oldLayout := currentLayout.
 	currentLayout := nextLayout.
