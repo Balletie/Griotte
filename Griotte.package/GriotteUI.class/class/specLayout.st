@@ -3,7 +3,7 @@ specLayout
 	<spec: #default>
 	^ SpecLayout composed newRow: [ :row | 
 		row
-			add: #list width: 400;
+			add: #reviewPanel width: 400;
 			addSplitter;
 			newColumn: [ :col |
 				col

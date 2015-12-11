@@ -2,7 +2,7 @@ initialization
 initializePresenter
 
 	self newCommentButton action: [
-		self list selectedReview ifNotNil: [ :r |
+		self reviewPanel selectedReview ifNotNil: [ :r |
 			r
 				newComment: 'Test'
 				byUser: (GrLoggedInUser
@@ -11,9 +11,9 @@ initializePresenter
 			].
 		commentList refresh
 	].
-	self list whenSelectedReviewChanged: [ :item |
+	self reviewPanel whenSelectedReviewChanged: [ :item |
 		" Check if it REALLY changed, to avoid unnecessarily creating objects. "
-		item == list selectedReview ifFalse: [
+		item == reviewPanel selectedReview ifFalse: [
 			self showCommentsFor: item
 		]
 	].

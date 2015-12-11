@@ -4,7 +4,7 @@ initializeWidgets
 	self
 		title: 'Griotte';
 		instantiateModels: #( 
-			#list #GrUIReviewPanel
+			#reviewPanel #GrUIReviewPanel
 			#diff #DiffModel
 			#newCommentButton #ButtonModel
 			).
