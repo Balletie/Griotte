@@ -1,8 +1,10 @@
 {
 	"class" : {
-		"defaultSpec" : "Skiplentz 10/2/2015 18:15",
+		"defaultSpec" : "SkipLentz 10/8/2015 16:45",
 		"labelWidth" : "Skiplentz 10/2/2015 18:01" },
 	"instance" : {
+		"initialExtent" : "SkipLentz 10/8/2015 17:04",
+		"initializeDialogWindow:" : "SkipLentz 10/9/2015 11:28",
 		"initializePresenter" : "Skiplentz 10/2/2015 18:02",
 		"initializeWidgets" : "Skiplentz 10/5/2015 10:59",
 		"okOrCancel" : "Skiplentz 10/2/2015 18:02",

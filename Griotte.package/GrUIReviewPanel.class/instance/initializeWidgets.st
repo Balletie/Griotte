@@ -22,3 +22,14 @@ initializeWidgets
 			(item class name = 'GrRepository')
 				ifTrue: [ item reviews ]
 				ifFalse: [ #() ] ].
+	self treeList whenSelectedItemChanged: [ :item|
+		" TODO: Make specialised TreeNode classes for reviews and repositories "
+		item class name = 'GrReview'
+			ifTrue: [
+				selectedReviewChanged cull: item.
+				selectedReview := item.
+			]
+			ifFalse: [
+				selectedRepository := item.
+			]
+	].

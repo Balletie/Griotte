@@ -13,7 +13,6 @@ defaultSpec
 				row
 					add: #passLabel width: self labelWidth;
 					add: #passText
-			] height: self inputTextHeight;
-			add: #okOrCancel height: self toolbarHeight
+			] height: self inputTextHeight
 		];
 		yourself

@@ -9,7 +9,9 @@
 		"titleLabel",
 		"addReviewButton",
 		"treeList",
-		"selectedReview" ],
+		"selectedReview",
+		"selectedReviewChanged",
+		"selectedRepository" ],
 	"name" : "GrUIReviewPanel",
 	"pools" : [
 		 ],

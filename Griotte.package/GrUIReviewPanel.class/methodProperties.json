@@ -1,12 +1,14 @@
 {
 	"class" : {
-		"createReview" : "Skiplentz 10/2/2015 11:08",
+		"createReview" : "SkipLentz 10/8/2015 17:16",
+		"createReviewInRepo:" : "SkipLentz 10/8/2015 17:16",
 		"defaultSpec" : "Skiplentz 10/2/2015 18:01" },
 	"instance" : {
 		"addReviewButton" : "Skiplentz 9/30/2015 17:38",
-		"initializePresenter" : "Skiplentz 10/2/2015 12:34",
-		"initializeWidgets" : "Skiplentz 10/2/2015 12:15",
+		"initializePresenter" : "SkipLentz 10/8/2015 17:27",
+		"initializeWidgets" : "SkipLentz 10/8/2015 17:22",
+		"selectedRepository" : "SkipLentz 10/8/2015 17:22",
 		"selectedReview" : "Skiplentz 10/2/2015 13:33",
 		"titleLabel" : "Skiplentz 9/30/2015 17:28",
 		"treeList" : "Skiplentz 10/2/2015 10:59",
-		"whenSelectedReviewChanged:" : "Skiplentz 10/2/2015 15:17" } }
+		"whenSelectedReviewChanged:" : "SkipLentz 10/8/2015 17:20" } }
