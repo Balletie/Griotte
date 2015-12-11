@@ -6,6 +6,6 @@
 	"instance" : {
 		"entryStreamFrom:" : "SkipLentz 12/1/2015 17:16",
 		"initializeWithPackageNamesRetriever:" : "SkipLentz 12/1/2015 16:51",
-		"mineFrom:until:" : "SkipLentz 12/7/2015 15:00",
+		"mineFrom:until:" : "SkipLentz 12/8/2015 15:58",
 		"nextEntryFromEntryStream:" : "SkipLentz 11/30/2015 17:02",
 		"onLog:" : "SkipLentz 11/9/2015 11:27" } }
