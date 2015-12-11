@@ -14,7 +14,8 @@ requestLogin
 			windowModel	toolbar: (self
 				loginMenuForUser: loggedInUser get
 				withIcon: (loggedInUser avatar get scaledToSize: 16 @ 16)
-				withAction: [ self inform: 'Hai' ])
+				withAction: [ self inform: 'Hai' ]).
+			windowModel toolbarFillSpace: false
 		].
 		self title: 'Griotte - Logged in as ' , loggedInUser get.
 		self reviewPanel addReviewButton enable.
