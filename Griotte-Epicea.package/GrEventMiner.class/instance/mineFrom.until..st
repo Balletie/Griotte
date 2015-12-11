@@ -5,6 +5,7 @@ mineFrom: aStartBooleanBlock until: anEndBooleanBlock
 	| mined packageNames visitor entryStream |
 	entryStream := self entryStreamFrom: aStartBooleanBlock.
 	mined := OrderedCollection new.
+	entryStream atEnd ifTrue: [ ^ mined ].
 	packageNames := packageNamesRetriever value: entryStream peek content.
 	visitor := GrPackageReducerVisitor packageNames: packageNames.
 	[ visitor hasRemainingPackages and: [ entryStream atEnd not ] ]
