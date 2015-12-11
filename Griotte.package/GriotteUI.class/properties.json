@@ -10,7 +10,8 @@
 		"diff",
 		"newCommentButton",
 		"commentList",
-		"windowModel" ],
+		"windowModel",
+		"loggedInUser" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],
