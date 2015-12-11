@@ -1,0 +1,1 @@
+Used to bind the GriotteWindowAdapter.
