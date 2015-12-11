@@ -1,1 +1,0 @@
-I am a simple extension of SpecWindow to also display a toolbar in the topright.

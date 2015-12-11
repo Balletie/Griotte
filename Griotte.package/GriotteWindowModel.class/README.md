@@ -1,1 +1,0 @@
-I am a extension of the WindowModel to be able to display a toolbar in the topright of the window, in addition to the window menu.

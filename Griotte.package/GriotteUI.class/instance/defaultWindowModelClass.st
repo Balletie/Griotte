@@ -1,3 +1,3 @@
 accessing
 defaultWindowModelClass
-	^ GriotteWindowModel
+	^ ToolbarWindowModel
