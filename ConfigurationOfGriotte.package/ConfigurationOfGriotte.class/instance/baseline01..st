@@ -5,17 +5,26 @@ baseline01: spec
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
 		spec repository: 'http://smalltalkhub.com/mc/Balletie/Griotte/main/'.
-		spec project: 'GitHub' with: [
+		spec
+			baseline: 'GitHub' with: [
 				spec
-					className: #ConfigurationOfGitHub;
-					versionString: #'stable';
-					repository: 'http://smalltalkhub.com/mc/Balletie/GitHub/main/' ].
-		spec project: 'Epicea' with: [
+					repository: 'github://Balletie/GitHub:master' ];
+			import: 'GitHub';
+			configuration: 'Epicea' with: [
 				spec
-					className: #ConfigurationOfEpicea;
 					versionString: #'stable';
 					repository: 'http://smalltalkhub.com/mc/MartinDias/Epicea/main/' ].
-		spec package: 'Griotte'.
-		spec package: 'Widget-Extensions-Balletie' with: [
-			spec file: 'Widget-Extensions-Balletie-SkipLentz.1'.
-			spec repository: 'http://smalltalkhub.com/mc/Balletie/Widget-Extensions/main/' ] ].
+
+		spec
+			package: 'Griotte-Epicea' with: [
+				spec requires: #('Epicea')];
+			package: 'Griotte-Model' with: [
+				spec requires: #('Griotte-Epicea') ];
+			package: 'Griotte-GitHub' with: [
+				spec requires: #('Griotte-Model' 'GitHub-Tool') ];
+			package: 'Widget-Extensions-Balletie' with: [
+				spec file: 'Widget-Extensions-Balletie-SkipLentz.3'.
+				spec repository: 'http://smalltalkhub.com/mc/Balletie/Widget-Extensions/main/' ];
+			package: 'Griotte-UI' with: [
+				spec requires: #('Griotte-Model' 'Griotte-GitHub' 'Widget-Extensions-Balletie') ]
+	].
