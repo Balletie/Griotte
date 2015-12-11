@@ -1,3 +1,3 @@
 accessing
-timestamp
+editTime
 	self subclassResponsibility.

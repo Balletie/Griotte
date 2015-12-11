@@ -4,9 +4,9 @@ setTextMarkup
 	| preAuthorString postAuthorPreTimeString timeStampString postTimeString infoText |
 	preAuthorString := 'Commented by '.
 	postAuthorPreTimeString := ' around '.
-	timeStampString := ((DateAndTime now - timeStamp) roundTo: 1 day) humanReadablePrintString.
+	timeStampString := ((DateAndTime now - commentModel createdTime) roundTo: 1 day) humanReadablePrintString.
 	postTimeString := ' ago'.
-	infoText := (preAuthorString , authorString ,
+	infoText := (preAuthorString , commentModel author get ,
 		postAuthorPreTimeString , timeStampString , postTimeString) asText.
 	infoText
 		addAttribute: TextEmphasis bold.

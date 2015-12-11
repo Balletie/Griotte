@@ -1,7 +1,10 @@
 {
 	"class" : {
-		 },
+		"createComment:byUser:" : "Skiplentz 9/30/2015 11:20" },
 	"instance" : {
+		"createdTime" : "Skiplentz 9/30/2015 13:18",
+		"editTime" : "Skiplentz 9/30/2015 13:17",
 		"get" : "Skiplentz 9/29/2015 15:15",
-		"set:" : "Skiplentz 9/29/2015 15:16",
-		"timestamp" : "Skiplentz 9/29/2015 17:09" } }
+		"isReadable" : "Skiplentz 9/30/2015 14:29",
+		"isWritable" : "Skiplentz 9/30/2015 14:29",
+		"set:" : "Skiplentz 9/29/2015 15:16" } }

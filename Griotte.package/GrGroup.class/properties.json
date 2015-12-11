@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "Skiplentz 9/29/2015 14:39",
+	"commentStamp" : "",
 	"instvars" : [
-		"author" ],
-	"name" : "GrComment",
+		 ],
+	"name" : "GrGroup",
 	"pools" : [
 		 ],
 	"super" : "GrServiceMappedObject",

@@ -1,0 +1,1 @@
+I am a service storing the data in-memory. I am the most trivial implementation of a GrService.

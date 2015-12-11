@@ -1,6 +1,10 @@
 {
 	"class" : {
-		 },
+		"initializeWithService:" : "Skiplentz 9/30/2015 13:37" },
 	"instance" : {
+		"createdTime" : "Skiplentz 9/30/2015 13:18",
+		"editTime" : "Skiplentz 9/30/2015 13:20",
+		"get" : "Skiplentz 9/30/2015 11:35",
 		"initializeWithService:" : "Skiplentz 9/29/2015 14:49",
-		"service" : "Skiplentz 9/29/2015 14:49" } }
+		"service" : "Skiplentz 9/30/2015 11:34",
+		"set:" : "Skiplentz 9/30/2015 11:35" } }

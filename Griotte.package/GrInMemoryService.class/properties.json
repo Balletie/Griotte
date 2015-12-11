@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "Skiplentz 9/29/2015 15:13",
+	"commentStamp" : "Skiplentz 9/30/2015 13:07",
 	"instvars" : [
-		"pod",
-		"timestamp" ],
-	"name" : "GrPODService",
+		"object",
+		"createdTimestamp",
+		"editTimestamp" ],
+	"name" : "GrInMemoryService",
 	"pools" : [
 		 ],
 	"super" : "GrService",

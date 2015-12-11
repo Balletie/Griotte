@@ -1,0 +1,3 @@
+accessing
+createdTime
+	self subclassResponsibility.

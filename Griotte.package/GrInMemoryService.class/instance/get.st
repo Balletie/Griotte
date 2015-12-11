@@ -1,3 +1,3 @@
 accessing
 get
-	^ pod.
+	^ object.

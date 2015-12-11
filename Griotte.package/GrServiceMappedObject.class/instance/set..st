@@ -1,3 +1,3 @@
 accessing
 set: anObject
-	pod := anObject.
+	service set: anObject.

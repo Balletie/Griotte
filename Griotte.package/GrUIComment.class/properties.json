@@ -9,9 +9,7 @@
 		"commentText",
 		"infoLabel",
 		"editIcon",
-		"commentString",
-		"authorString",
-		"timeStamp" ],
+		"commentModel" ],
 	"name" : "GrUIComment",
 	"pools" : [
 		 ],
