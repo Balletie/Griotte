@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "Skiplentz 10/1/2015 16:28",
 	"instvars" : [
-		"reviews" ],
+		"reviews",
+		"packages" ],
 	"name" : "GrRepository",
 	"pools" : [
 		 ],

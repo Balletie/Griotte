@@ -1,0 +1,16 @@
+{
+	"category" : "Griotte-Epicea",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 11/9/2015 13:49",
+	"instvars" : [
+		"log",
+		"packageNames",
+		"packageReductionAsserter" ],
+	"name" : "GrEventMiner",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

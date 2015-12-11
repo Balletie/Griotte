@@ -1,0 +1,4 @@
+testing
+hasRemainingPackages
+
+	^ packageNames isNotEmpty

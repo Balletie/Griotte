@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"packageNames:" : "SkipLentz 11/9/2015 16:36" },
+	"instance" : {
+		"initializeWithPackageNames:" : "SkipLentz 11/9/2015 16:36",
+		"visitCodeChange:" : "SkipLentz 11/10/2015 14:03",
+		"visitEvent:" : "SkipLentz 11/10/2015 14:00",
+		"visitMonticelloVersionSave:" : "SkipLentz 11/10/2015 14:01",
+		"visitMonticelloVersionsLoad:" : "SkipLentz 11/10/2015 14:00" } }

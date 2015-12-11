@@ -1,7 +1,8 @@
 {
 	"class" : {
-		 },
+		"initializeWithPackageNames:serviceObject:" : "SkipLentz 11/10/2015 15:06" },
 	"instance" : {
 		"addReview:" : "Skiplentz 10/1/2015 16:28",
-		"initialize" : "Skiplentz 10/1/2015 16:28",
+		"initializeWithPackageNames:" : "SkipLentz 11/10/2015 15:04",
+		"packageNames" : "SkipLentz 11/12/2015 13:33",
 		"reviews" : "Skiplentz 10/1/2015 16:28" } }
