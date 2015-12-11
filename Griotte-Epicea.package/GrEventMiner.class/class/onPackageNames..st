@@ -1,6 +1,4 @@
 instance creation
 onPackageNames: aCollection
 
-	^ self new
-		initializeWithPackageNames: aCollection;
-		yourself
+	^ self onPackageNamesRetriever: [ :dummy | aCollection ]

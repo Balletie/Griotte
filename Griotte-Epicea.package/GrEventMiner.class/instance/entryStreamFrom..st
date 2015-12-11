@@ -4,7 +4,7 @@ entryStreamFrom: aStartBooleanBlock
 	| latestEntries entryStream |
 	latestEntries := log priorEntriesFromHead.
 	entryStream := latestEntries readStream.
-	[ entryStream atEnd or: [ aStartBooleanBlock value: entryStream peek ] ]
+	[ entryStream atEnd or: [ aStartBooleanBlock value: entryStream peek content ] ]
 		whileFalse: [
 			entryStream skipTo: (self nextEntryFromEntryStream: entryStream) ].
 	^ entryStream

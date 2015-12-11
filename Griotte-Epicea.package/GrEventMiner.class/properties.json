@@ -7,7 +7,7 @@
 	"commentStamp" : "SkipLentz 11/27/2015 10:58",
 	"instvars" : [
 		"log",
-		"packageNames" ],
+		"packageNamesRetriever" ],
 	"name" : "GrEventMiner",
 	"pools" : [
 		 ],

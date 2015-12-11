@@ -2,9 +2,10 @@ executing
 mineFrom: aStartBooleanBlock until: anEndBooleanBlock
 	" Mine the relevant IDE events until aBooleanBlock returns true
 	  and return them. "
-	| mined visitor entryStream |
+	| mined packageNames visitor entryStream |
 	entryStream := self entryStreamFrom: aStartBooleanBlock.
 	mined := OrderedCollection new.
+	packageNames := packageNamesRetriever value: entryStream peek content.
 	visitor := GrPackageReducerVisitor packageNames: packageNames.
 	[ visitor hasRemainingPackages and: [ entryStream atEnd not ] ]
 		whileTrue:

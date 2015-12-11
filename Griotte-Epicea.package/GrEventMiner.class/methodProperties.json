@@ -1,11 +1,12 @@
 {
 	"class" : {
-		"onPackageNames:" : "SkipLentz 11/9/2015 11:34",
-		"onRepository:" : "SkipLentz 11/9/2015 11:33" },
+		"onPackageNames:" : "SkipLentz 12/1/2015 16:50",
+		"onPackageNamesRetriever:" : "SkipLentz 12/1/2015 16:49",
+		"onRepository:" : "SkipLentz 12/1/2015 16:50" },
 	"instance" : {
-		"entryStreamFrom:" : "SkipLentz 11/30/2015 17:03",
+		"entryStreamFrom:" : "SkipLentz 12/1/2015 17:16",
 		"initializeWithPackageNames:" : "SkipLentz 11/27/2015 10:52",
-		"initializeWithRepository:" : "SkipLentz 11/12/2015 15:35",
-		"mineFrom:until:" : "SkipLentz 11/30/2015 17:00",
+		"initializeWithPackageNamesRetriever:" : "SkipLentz 12/1/2015 16:51",
+		"mineFrom:until:" : "SkipLentz 12/2/2015 18:02",
 		"nextEntryFromEntryStream:" : "SkipLentz 11/30/2015 17:02",
 		"onLog:" : "SkipLentz 11/9/2015 11:27" } }
