@@ -8,7 +8,7 @@ baseline01: spec
 		spec
 			baseline: 'GitHub' with: [
 				spec
-					repository: 'github://Balletie/GitHub:master' ];
+					repository: 'github://Balletie/GitHub:demo-prototype-code' ];
 			import: 'GitHub';
 			configuration: 'Epicea' with: [
 				spec
