@@ -1,9 +1,11 @@
 {
 	"class" : {
+		"open" : "SkipLentz 9/22/2015 15:46",
 		"specLayout" : "SkipLentz 9/21/2015 15:53" },
 	"instance" : {
 		"diff" : "SkipLentz 9/15/2015 11:13",
 		"initialExtent" : "SkipLentz 9/22/2015 15:43",
 		"initializePresenter" : "SkipLentz 9/21/2015 14:07",
 		"initializeWidgets" : "SkipLentz 9/22/2015 15:29",
-		"list" : "SkipLentz 9/15/2015 11:13" } }
+		"list" : "SkipLentz 9/15/2015 11:13",
+		"open" : "SkipLentz 9/22/2015 15:45" } }
