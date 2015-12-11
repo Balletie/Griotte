@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI-Window",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 10/2/2015 16:24",
+	"instvars" : [
+		"toolbar" ],
+	"name" : "GriotteWindowModel",
+	"pools" : [
+		 ],
+	"super" : "WindowModel",
+	"type" : "normal" }

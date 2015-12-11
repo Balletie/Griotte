@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI-Window",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 10/2/2015 16:25",
+	"instvars" : [
+		 ],
+	"name" : "GriotteSpecWindow",
+	"pools" : [
+		 ],
+	"super" : "SpecWindow",
+	"type" : "normal" }
