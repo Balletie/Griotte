@@ -1,4 +1,4 @@
 initialization
 initializeWithGitHub: aGitHub
 
-	api := aGitHub.
+	github := aGitHub.
