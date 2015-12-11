@@ -9,7 +9,8 @@
 		"creator",
 		"topComments",
 		"groups",
-		"project",
+		"start",
+		"end",
 		"repository" ],
 	"name" : "GrReview",
 	"pools" : [

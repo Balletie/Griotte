@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"byCreator:onProject:onRepository:withService:" : "Skiplentz 10/2/2015 11:08" },
+		"byCreator:onRepository:withService:" : "SkipLentz 11/4/2015 16:20" },
 	"instance" : {
 		"creator" : "Skiplentz 10/1/2015 16:26",
 		"groups" : "Skiplentz 10/1/2015 16:26",
 		"initialize" : "Skiplentz 10/2/2015 11:25",
-		"initializeWithCreator:project:repository:" : "Skiplentz 10/1/2015 16:28",
+		"initializeWithCreator:repository:" : "SkipLentz 11/4/2015 17:16",
 		"newComment:byUser:" : "Skiplentz 10/2/2015 10:48",
 		"project" : "Skiplentz 10/1/2015 16:26",
 		"repository" : "Skiplentz 10/1/2015 16:26",
