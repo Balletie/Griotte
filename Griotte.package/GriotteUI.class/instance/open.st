@@ -1,3 +1,3 @@
 displaying
 open
-	self openWithSpec.
+	self openWithSpecLayout: (self class specLayout: [ :col | col ]).

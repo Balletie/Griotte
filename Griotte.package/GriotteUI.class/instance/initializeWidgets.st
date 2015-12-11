@@ -1,16 +1,13 @@
 initialization
 initializeWidgets
 
-	displayComment := IdentityNewValueHolder value: false.
-	displayComment whenChangedSend: #toggleCommentBox to: self.
-	currentLayout := self class specLayoutNoComment.
-	nextLayout := self class specLayoutComment.
+	currentLayout := [ :block | self class specLayout: block ].
+	nextLayout := [ :block | self class specLayoutAddComment: block ].
 	self
 		title: 'Griotte';
 		instantiateModels: #( 
 			#list #TreeModel
 			#diff #DiffModel
-			#commentList #ListModel
 			#comment #TextInputFieldModel
 			#newCommentButton #ButtonModel
 			#saveButton #ButtonModel

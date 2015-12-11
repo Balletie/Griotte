@@ -6,4 +6,4 @@ toggleCommentBox
 	nextLayout := oldLayout.
 
 	self needFullRebuild: false.
-	self buildWithSpecLayout: currentLayout.
+	self buildWithSpecLayout: (currentLayout value: commentsColumnBlock).

@@ -1,3 +1,0 @@
-accessing
-displayComment
-	^ displayComment value

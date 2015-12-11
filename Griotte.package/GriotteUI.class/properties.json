@@ -8,7 +8,8 @@
 	"instvars" : [
 		"displayComment",
 		"currentLayout",
-		"nextLayout" ],
+		"nextLayout",
+		"commentsColumnBlock" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],

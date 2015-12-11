@@ -1,6 +1,5 @@
 spec
-specLayoutNoComment
-	<spec: #default>
+specLayout: aCommentListBlock
 
 	^ SpecLayout composed newRow: [ :row | 
 		row
@@ -10,7 +9,7 @@ specLayoutNoComment
 				col
 					add: #diff;
 					addSplitter;
-					add: #commentList;
+					newColumn: aCommentListBlock;
 					newRow: [ :buttons |
 						buttons
 							add: #newCommentButton.

@@ -1,5 +1,5 @@
 spec
-specLayoutComment
+specLayoutAddComment: aCommentListBlock
 
 	^ SpecLayout composed newRow: [ :row | 
 		row
@@ -9,7 +9,7 @@ specLayoutComment
 				col
 					add: #diff;
 					addSplitter;
-					add: #commentList;
+					newColumn: aCommentListBlock;
 					add: #comment
 						origin: 0@0 corner: 1@0
 						offsetOrigin: 0@0

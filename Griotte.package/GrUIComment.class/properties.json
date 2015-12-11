@@ -1,0 +1,17 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Skiplentz 9/25/2015 10:31",
+	"instvars" : [
+		"commentText",
+		"author",
+		"authorString",
+		"commentString" ],
+	"name" : "GrUIComment",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }
