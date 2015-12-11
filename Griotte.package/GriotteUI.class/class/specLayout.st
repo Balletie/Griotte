@@ -2,8 +2,8 @@ spec
 specLayout
 	<spec: #default>
 
-	^ SpecLayout composed newColumn: [ :column | 
-		column
+	^ SpecLayout composed newRow: [ :row | 
+		row
 			add: #list;
 			addSplitter;
 			add: #diff
