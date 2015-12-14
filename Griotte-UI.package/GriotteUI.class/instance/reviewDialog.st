@@ -3,6 +3,6 @@ reviewDialog
 
 	| dialog |
 	dialog := GrUINewReviewDialog new
-		repositories: loggedInUser repositories;
+		repositories: currentContext value repositories;
 		yourself.
 	^ dialog

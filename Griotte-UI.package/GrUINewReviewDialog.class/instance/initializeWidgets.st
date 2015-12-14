@@ -8,6 +8,6 @@ initializeWidgets
 			#reviewInputText #TextInputFieldModel
 		).
 	self repositoryDropList
-		displayBlock: [ :item | item get ].
+		displayBlock: [ :item | (item owner at: 'login') , '/' , item name ].
 	self reviewInputText
 		autoAccept: true.

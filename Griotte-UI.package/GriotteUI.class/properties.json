@@ -6,14 +6,15 @@
 		 ],
 	"commentStamp" : "SkipLentz 9/15/2015 15:26",
 	"instvars" : [
+		"currentContext",
+		"contexts",
 		"diff",
 		"newCommentButton",
 		"commentList",
 		"windowModel",
-		"loggedInUser",
 		"reviewPanel" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],
-	"super" : "ComposableModel",
+	"super" : "AbstractLoginModel",
 	"type" : "normal" }
