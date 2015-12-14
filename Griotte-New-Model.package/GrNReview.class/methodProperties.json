@@ -6,6 +6,7 @@
 		"repositoryClass" : "SkipLentz 12/9/2015 14:27" },
 	"instance" : {
 		"approve" : "SkipLentz 12/9/2015 14:05",
+		"creator" : "SkipLentz 12/14/2015 14:59",
 		"initialize" : "SkipLentz 12/10/2015 15:22",
 		"newCommentWithBody:" : "SkipLentz 12/10/2015 15:22",
 		"reject" : "SkipLentz 12/9/2015 14:05" } }
