@@ -9,10 +9,14 @@ initializeWidgets
 			#descriptionInputText #TextInputFieldModel
 		).
 	self repositoryDropList
-		displayBlock: [ :item | (item owner at: 'login') , '/' , item name ].
+		displayBlock: [ :item | item name ].
 	self reviewInputText
 		ghostText: 'Title';
 		autoAccept: true.
 	self descriptionInputText
 		ghostText: 'Description';
 		autoAccept: true.
+	self focusOrder
+		add: self repositoryDropList;
+		add: self reviewInputText;
+		add: self descriptionInputText

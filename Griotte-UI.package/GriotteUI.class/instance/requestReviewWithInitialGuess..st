@@ -2,7 +2,6 @@ actions
 requestReviewWithInitialGuess: aRepository
 
 	| dialog |
-	dialog := self reviewDialog.
+	dialog := self showReviewDialog.
 	dialog initialRepositoryGuess: aRepository.
-	dialog modalRelativeTo: window.
 	^ dialog getReview
