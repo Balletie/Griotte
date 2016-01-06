@@ -4,6 +4,8 @@
 		"createOnReview:withBody:" : "SkipLentz 1/6/2016 14:46" },
 	"instance" : {
 		"body" : "SkipLentz 1/6/2016 14:47",
-		"creator" : "SkipLentz 1/6/2016 14:47",
+		"createdAt" : "SkipLentz 1/6/2016 16:46",
+		"creator" : "SkipLentz 1/6/2016 16:23",
 		"edit:" : "SkipLentz 1/6/2016 14:47",
+		"editedAt" : "SkipLentz 1/6/2016 16:46",
 		"initializeWithIssueComment:" : "SkipLentz 1/6/2016 14:47" } }

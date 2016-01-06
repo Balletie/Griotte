@@ -1,0 +1,4 @@
+accessing
+createdAt
+
+	^ issueComment createdAt
