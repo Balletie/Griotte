@@ -8,4 +8,6 @@ initialize
 	currentContext whenChangedDo: [ :newContext |
 		newContext
 			ifNil: [ self showLoginMenu ]
-			ifNotNil: [ self showAuthenticatedMenu ] ].
+			ifNotNil: [
+				self showAuthenticatedMenu.
+				self reviewPanel addReviewButton enable ] ].

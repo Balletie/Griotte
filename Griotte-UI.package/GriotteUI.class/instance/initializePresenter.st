@@ -1,14 +1,6 @@
 initialization
 initializePresenter
 
-	self newCommentButton action: [
-		self reviewPanel selectedReview ifNotNil: [ :r |
-			r
-				newComment: 'Test'
-				byUser: loggedInUser
-			].
-		commentList refresh
-	].
 	self reviewPanel whenSelectedReviewChanged: [ :item |
 		" Check if it REALLY changed, to avoid unnecessarily creating objects. "
 		item == reviewPanel selectedReview ifFalse: [

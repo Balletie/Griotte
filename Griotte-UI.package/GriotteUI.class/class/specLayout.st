@@ -7,8 +7,6 @@ specLayout
 			addSplitter;
 			newColumn: [ :col |
 				col
-					add: #diff;
-					addSplitter;
 					add: #commentList;
 					newRow: [ :buttons |
 						buttons
