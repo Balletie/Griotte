@@ -1,12 +1,13 @@
 {
 	"class" : {
-		"defaultSpec" : "SkipLentz 10/15/2015 12:16" },
+		"defaultSpec" : "SkipLentz 1/6/2016 13:26" },
 	"instance" : {
-		"getReviewForUser:" : "SkipLentz 10/15/2015 13:36",
-		"initialExtent" : "SkipLentz 10/15/2015 12:20",
+		"descriptionInputText" : "SkipLentz 1/6/2016 13:24",
+		"getReview" : "SkipLentz 1/6/2016 13:27",
+		"initialExtent" : "SkipLentz 1/6/2016 13:25",
 		"initialRepositoryGuess:" : "SkipLentz 10/15/2015 13:50",
 		"initialize" : "SkipLentz 10/15/2015 12:14",
-		"initializeWidgets" : "SkipLentz 12/11/2015 15:39",
+		"initializeWidgets" : "SkipLentz 1/6/2016 13:28",
 		"modalRelativeTo:" : "SkipLentz 10/15/2015 11:26",
 		"open" : "SkipLentz 10/15/2015 11:25",
 		"repositories:" : "SkipLentz 10/14/2015 13:47",

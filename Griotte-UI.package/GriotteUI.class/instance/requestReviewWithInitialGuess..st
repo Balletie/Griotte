@@ -5,4 +5,4 @@ requestReviewWithInitialGuess: aRepository
 	dialog := self reviewDialog.
 	dialog initialRepositoryGuess: aRepository.
 	dialog modalRelativeTo: window.
-	^ dialog getReviewForUser: nil
+	^ dialog getReview
