@@ -1,6 +1,9 @@
 {
 	"class" : {
 		"createOnGroup:withBody:" : "SkipLentz 12/10/2015 14:48",
-		"createOnReview:withBody:" : "SkipLentz 12/10/2015 14:48" },
+		"createOnReview:withBody:" : "SkipLentz 1/6/2016 14:46" },
 	"instance" : {
-		 } }
+		"body" : "SkipLentz 1/6/2016 14:47",
+		"creator" : "SkipLentz 1/6/2016 14:47",
+		"edit:" : "SkipLentz 1/6/2016 14:47",
+		"initializeWithIssueComment:" : "SkipLentz 1/6/2016 14:47" } }
