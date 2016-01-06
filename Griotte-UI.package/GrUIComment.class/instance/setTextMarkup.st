@@ -8,7 +8,7 @@ setTextMarkup
 		humanReadablePrintString.
 	postTimeString := ' ago'.
 	commentModel isEdited ifTrue: [
-		postTimeString := postTimeString , ', last edit: ' , commentModel editAt asString.
+		postTimeString := postTimeString , ', last edit: ' , commentModel editedAt asString.
 	].
 	infoText := (preAuthorString , commentModel creator username,
 		postAuthorPreTimeString , timeStampString , postTimeString) asText.
