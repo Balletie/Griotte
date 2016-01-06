@@ -9,6 +9,6 @@ initializePresenter
 	self commentText
 		acceptBlock: [ :newComment |
 			self commentText disable.
-			self commentModel set: newComment.
+			self commentModel edit: newComment.
 			self setTextMarkup.
 		]

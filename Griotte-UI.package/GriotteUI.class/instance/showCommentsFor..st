@@ -1,5 +1,5 @@
 actions
 showCommentsFor: anItem
 	commentList
-		elements: anItem topComments;
+		elements: anItem comments;
 		refresh.

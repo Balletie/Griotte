@@ -16,7 +16,7 @@ initializeWidgets
 		help: 'Create a new review'.
 	self treeList
 		multiSelection: false;
-		displayBlock: [ :item | item get ];
+		displayBlock: [ :item | 'Placeholder' ];
 		rootNodeHolder: [ :item |
 			GrUIRepositoryNode new
 				content: item

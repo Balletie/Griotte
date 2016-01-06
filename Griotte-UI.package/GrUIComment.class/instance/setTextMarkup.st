@@ -4,12 +4,13 @@ setTextMarkup
 	| preAuthorString postAuthorPreTimeString timeStampString postTimeString infoText |
 	preAuthorString := 'Commented by '.
 	postAuthorPreTimeString := ' around '.
-	timeStampString := ((DateAndTime now - commentModel createdTime) roundTo: 1 day) humanReadablePrintString.
+	timeStampString := ((DateAndTime now - commentModel createdAt) roundTo: 1 day)
+		humanReadablePrintString.
 	postTimeString := ' ago'.
-	commentModel editTime ~= commentModel createdTime ifTrue: [
-		postTimeString := postTimeString , ', last edit: ' , commentModel editTime asString.
+	commentModel isEdited ifTrue: [
+		postTimeString := postTimeString , ', last edit: ' , commentModel editAt asString.
 	].
-	infoText := (preAuthorString , commentModel author get ,
+	infoText := (preAuthorString , commentModel creator username,
 		postAuthorPreTimeString , timeStampString , postTimeString) asText.
 	infoText
 		addAttribute: TextEmphasis bold.
