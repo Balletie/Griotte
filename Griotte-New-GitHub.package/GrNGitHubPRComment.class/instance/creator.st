@@ -1,4 +1,4 @@
 accessing
 creator
 
-	^ GHUser onAPIUser: issueComment user
+	^ GrNGitHubUser onAPIUser: issueComment user
