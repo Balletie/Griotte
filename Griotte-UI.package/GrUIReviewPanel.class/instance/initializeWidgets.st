@@ -16,11 +16,13 @@ initializeWidgets
 		help: 'Create a new review'.
 	self treeList
 		multiSelection: false;
-		displayBlock: [ :item | 'Placeholder' ];
 		rootNodeHolder: [ :item |
 			GrUIRepositoryNode new
 				content: item
-		].
+		];
+		columns: { TreeColumnModel new
+			displayBlock: [:node | node label ] }.
+
 	self treeList whenSelectedNodeChanged: [ :node |
 		node isReview
 			ifTrue: [
