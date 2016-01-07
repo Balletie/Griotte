@@ -8,13 +8,14 @@ initializePresenter
 	self reviewPanel addReviewButton
 		action: [ | review |
 			review := self
-				requestReviewWithInitialGuess: self reviewPanel selectedRepository.
+				showRepositoryDialog: GrUINewReviewDialog
+				withInitialGuess: self reviewPanel selectedRepository.
 			self addReview: review
 		].
 	self reviewPanel openReviewButton
 		action: [ | review |
-			review := (self showRepositoryDialog: GrUIOpenReviewDialog)
-				initialRepositoryGuess: self reviewPanel selectedRepository;
-				get.
+			review := self
+				showRepositoryDialog: GrUIOpenReviewDialog
+				withInitialGuess: self reviewPanel selectedRepository.
 			self addReview: review
 		]
