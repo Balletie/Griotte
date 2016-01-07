@@ -1,3 +1,4 @@
 actions
 approve
-	self shouldBeImplemented
+
+	^ self pullRequest merge

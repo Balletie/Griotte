@@ -1,3 +1,4 @@
 actions
 reject
-	self shouldBeImplemented
+
+	^ self pullRequest close
