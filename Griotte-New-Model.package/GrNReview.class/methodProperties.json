@@ -5,9 +5,11 @@
 		"onRepository:withTitle:description:" : "SkipLentz 12/9/2015 14:27",
 		"repositoryClass" : "SkipLentz 12/9/2015 14:27" },
 	"instance" : {
+		"=" : "SkipLentz 1/7/2016 14:39",
 		"approve" : "SkipLentz 12/9/2015 14:05",
 		"comments" : "SkipLentz 1/6/2016 16:16",
 		"creator" : "SkipLentz 12/14/2015 14:59",
+		"hash" : "SkipLentz 1/7/2016 14:39",
 		"initialize" : "SkipLentz 12/10/2015 15:22",
 		"newCommentWithBody:" : "SkipLentz 12/10/2015 15:22",
 		"reject" : "SkipLentz 12/9/2015 14:05",

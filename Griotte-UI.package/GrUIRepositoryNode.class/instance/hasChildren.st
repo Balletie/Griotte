@@ -1,4 +1,4 @@
 testing
 hasChildren
 
-	^ self content reviews isNotEmpty
+	^ self content localReviews isNotEmpty

@@ -10,4 +10,5 @@ initialize
 			ifNil: [ self showLoginMenu ]
 			ifNotNil: [
 				self showAuthenticatedMenu.
-				self reviewPanel addReviewButton enable ] ].
+				self reviewPanel addReviewButton enable.
+				self reviewPanel openReviewButton enable ] ].

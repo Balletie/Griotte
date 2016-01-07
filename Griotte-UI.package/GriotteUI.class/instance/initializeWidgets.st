@@ -11,3 +11,5 @@ initializeWidgets
 		label: 'New comment'.
 	self reviewPanel addReviewButton
 		disable.
+	self reviewPanel openReviewButton
+		disable.

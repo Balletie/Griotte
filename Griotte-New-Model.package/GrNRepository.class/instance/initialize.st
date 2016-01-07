@@ -1,4 +1,4 @@
 initialization
 initialize
 
-	reviews := OrderedCollection new.
+	localReviews := OrderedCollection new.

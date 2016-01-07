@@ -2,8 +2,10 @@
 	"class" : {
 		"withLoggedInUser:" : "SkipLentz 12/11/2015 16:32" },
 	"instance" : {
-		"allReviews" : "SkipLentz 12/11/2015 16:29",
-		"initialize" : "SkipLentz 12/11/2015 16:27",
+		"addRepository:" : "SkipLentz 1/7/2016 14:35",
+		"allLocalReviews" : "SkipLentz 1/7/2016 13:48",
+		"allRepositories" : "SkipLentz 1/7/2016 14:35",
+		"initialize" : "SkipLentz 1/7/2016 13:40",
 		"initializeWithLoggedInUser:" : "SkipLentz 12/11/2015 16:32",
-		"repositories" : "SkipLentz 12/11/2015 16:26",
+		"localRepositories" : "SkipLentz 1/7/2016 13:40",
 		"user" : "SkipLentz 12/14/2015 17:54" } }

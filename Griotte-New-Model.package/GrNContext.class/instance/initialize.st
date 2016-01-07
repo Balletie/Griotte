@@ -1,4 +1,4 @@
 initialization
 initialize
 
-	repositories := OrderedCollection new
+	localRepositories := OrderedCollection new

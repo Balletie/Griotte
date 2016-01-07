@@ -5,11 +5,16 @@ initializeWidgets
 		title: 'Griotte Reviews';
 		instantiateModels: {
 			#titleLabel -> #LabelModel.
+			#openReviewButton -> #ButtonModel.
 			#addReviewButton -> #ButtonModel.
 			#treeList -> #GrUITreeModel.
 		}.
 
 	self titleLabel label: 'Reviews'.
+	self openReviewButton
+		label: 'Open Review';
+		icon: GriotteUI openIcon;
+		help: 'Open an existing review'.
 	self addReviewButton
 		label: 'New Review';
 		icon: GriotteUI addIcon;

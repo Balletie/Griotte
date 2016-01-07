@@ -5,5 +5,4 @@ get
 		whileFalse: [ " wait " ].
 	dialogModel cancelled
 		ifTrue: [ ^ nil ].
-
 	^ self createProduct

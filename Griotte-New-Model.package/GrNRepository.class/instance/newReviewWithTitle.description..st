@@ -5,5 +5,5 @@ newReviewWithTitle: aTitleString description: aDescriptionString
 		onRepository: self
 		withTitle: aTitleString
 		description: aDescriptionString.
-	reviews add: review.
+	self addReview: review.
 	^ review

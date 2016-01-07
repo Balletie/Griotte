@@ -2,7 +2,11 @@
 	"class" : {
 		"reviewClass" : "SkipLentz 12/9/2015 14:23" },
 	"instance" : {
-		"initialize" : "SkipLentz 12/10/2015 15:13",
+		"=" : "SkipLentz 1/7/2016 13:24",
+		"addReview:" : "SkipLentz 1/7/2016 13:13",
+		"allReviews" : "SkipLentz 1/7/2016 13:14",
+		"hash" : "SkipLentz 1/7/2016 13:24",
+		"initialize" : "SkipLentz 1/7/2016 13:13",
+		"localReviews" : "SkipLentz 1/7/2016 13:14",
 		"name" : "SkipLentz 1/6/2016 14:17",
-		"newReviewWithTitle:description:" : "SkipLentz 12/10/2015 15:14",
-		"reviews" : "SkipLentz 12/11/2015 16:28" } }
+		"newReviewWithTitle:description:" : "SkipLentz 1/7/2016 11:42" } }
