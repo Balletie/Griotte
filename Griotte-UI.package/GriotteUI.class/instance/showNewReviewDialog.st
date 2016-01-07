@@ -1,5 +1,5 @@
 displaying
-showReviewDialog
+showNewReviewDialog
 
 	| dialog |
 	dialog := GrUINewReviewDialog new

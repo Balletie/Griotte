@@ -1,0 +1,4 @@
+accessing
+createProduct
+
+	self subclassResponsibility

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "SkipLentz 1/7/2016 10:55",
 	"instvars" : [
-		"reviewInputText",
-		"descriptionInputText" ],
-	"name" : "GrUINewReviewDialog",
+		"repositoryDropList" ],
+	"name" : "GrUIRepositoryDialog",
 	"pools" : [
 		 ],
-	"super" : "GrUIRepositoryDialog",
+	"super" : "GrUIDialog",
 	"type" : "normal" }

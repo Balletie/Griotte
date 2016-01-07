@@ -1,0 +1,4 @@
+accessing
+createProduct
+
+	^ repositoryDropList selectedItem
