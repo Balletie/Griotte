@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"loggedInUser",
+		"localRepositories" ],
+	"name" : "GrNContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-GitHub",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GrNGitHubComment",
+	"pools" : [
+		 ],
+	"super" : "GrNComment",
+	"type" : "normal" }

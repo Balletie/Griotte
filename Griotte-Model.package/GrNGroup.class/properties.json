@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"comments" ],
+	"name" : "GrNGroup",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
