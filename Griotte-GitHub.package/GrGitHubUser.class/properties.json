@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "SkipLentz 1/8/2016 14:47",
 	"instvars" : [
 		"apiUser" ],
 	"name" : "GrGitHubUser",
