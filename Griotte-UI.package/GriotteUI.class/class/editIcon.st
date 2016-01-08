@@ -1,3 +1,3 @@
 accessing
 editIcon
-	^ Smalltalk ui icons editIcon
+	^ Smalltalk ui icons edit

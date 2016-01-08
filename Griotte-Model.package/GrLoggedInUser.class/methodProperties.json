@@ -1,9 +1,0 @@
-{
-	"class" : {
-		"initializeWithService:serviceObject:" : "SkipLentz 10/7/2015 15:27",
-		"withUsername:password:onServiceClass:" : "Skiplentz 10/5/2015 12:05" },
-	"instance" : {
-		"initializeWithService:" : "SkipLentz 10/15/2015 13:51",
-		"newReview:onRepository:" : "SkipLentz 11/30/2015 18:14",
-		"repositories" : "SkipLentz 10/15/2015 13:51",
-		"service" : "Skiplentz 10/2/2015 10:33" } }

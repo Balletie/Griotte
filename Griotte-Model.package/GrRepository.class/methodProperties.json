@@ -1,9 +1,12 @@
 {
 	"class" : {
-		"initializeWithPackageNames:serviceObject:" : "SkipLentz 11/10/2015 15:06" },
+		"reviewClass" : "SkipLentz 12/9/2015 14:23" },
 	"instance" : {
-		"addReview:" : "Skiplentz 10/1/2015 16:28",
-		"initialize" : "SkipLentz 12/2/2015 11:51",
-		"initializeWithPackageNames:" : "SkipLentz 12/2/2015 11:51",
-		"packageNames" : "SkipLentz 11/12/2015 13:33",
-		"reviews" : "Skiplentz 10/1/2015 16:28" } }
+		"=" : "SkipLentz 1/7/2016 13:24",
+		"addReview:" : "SkipLentz 1/7/2016 13:13",
+		"allReviews" : "SkipLentz 1/7/2016 13:14",
+		"hash" : "SkipLentz 1/7/2016 13:24",
+		"initialize" : "SkipLentz 1/7/2016 13:13",
+		"localReviews" : "SkipLentz 1/7/2016 13:14",
+		"name" : "SkipLentz 1/6/2016 14:17",
+		"newReviewWithTitle:description:" : "SkipLentz 1/7/2016 11:42" } }

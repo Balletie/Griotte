@@ -1,11 +1,18 @@
 {
 	"class" : {
-		"byCreator:onRepository:withService:" : "SkipLentz 11/4/2015 16:20" },
+		"commentClass" : "SkipLentz 12/9/2015 14:30",
+		"createOnRepository:withTitle:description:" : "SkipLentz 12/9/2015 14:27",
+		"onRepository:withTitle:description:" : "SkipLentz 12/9/2015 14:27",
+		"repositoryClass" : "SkipLentz 12/9/2015 14:27" },
 	"instance" : {
-		"creator" : "Skiplentz 10/1/2015 16:26",
-		"groups" : "Skiplentz 10/1/2015 16:26",
-		"initialize" : "Skiplentz 10/2/2015 11:25",
-		"initializeWithCreator:repository:" : "SkipLentz 11/4/2015 17:16",
-		"newComment:byUser:" : "Skiplentz 10/2/2015 10:48",
-		"repository" : "Skiplentz 10/1/2015 16:26",
-		"topComments" : "Skiplentz 10/2/2015 12:22" } }
+		"=" : "SkipLentz 1/7/2016 14:39",
+		"approve" : "SkipLentz 12/9/2015 14:05",
+		"comments" : "SkipLentz 1/6/2016 16:16",
+		"creator" : "SkipLentz 12/14/2015 14:59",
+		"description" : "SkipLentz 1/7/2016 16:24",
+		"hash" : "SkipLentz 1/7/2016 14:39",
+		"initialize" : "SkipLentz 12/10/2015 15:22",
+		"newCommentWithBody:" : "SkipLentz 12/10/2015 15:22",
+		"reject" : "SkipLentz 12/9/2015 14:05",
+		"repository" : "SkipLentz 1/6/2016 13:18",
+		"title" : "SkipLentz 1/6/2016 17:33" } }

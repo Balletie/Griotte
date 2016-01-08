@@ -1,0 +1,4 @@
+accessing
+editedAt
+
+	^ issueComment updatedAt

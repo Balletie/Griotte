@@ -1,6 +1,14 @@
-I am a Griotte review.
+I represent a review for a particular change that is to be integrated into the system.
 
-My responsibility is handling approval and rejection. I serve as a main entry point for creating top level comments in a conversation, and accessing them. 
-I know the creator of the review.
+I can be used to add top-level comments to a review, and to approve or reject a review. Furthermore, I can provide the title, description and creator of the review, as well as the comments.
 
-Thus, GrUser is one of my collaborators.
+Public API and Key Messages
+
+- #approve/#reject are self explanatory.
+- #comments returns the top-level comments. That is, the comments pertaining to the review globally.
+- #creator/#repository/#title/#description are accessors for a GrUser, GrRepository, the title String and the description String.
+
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+	comments:		an OrderedCollection of GrComments

@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/7/2016 10:55",
+	"instvars" : [
+		"repositoryDropList" ],
+	"name" : "GrUIRepositoryDialog",
+	"pools" : [
+		 ],
+	"super" : "GrUIDialog",
+	"type" : "normal" }

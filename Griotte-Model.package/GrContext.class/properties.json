@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/8/2016 15:22",
+	"instvars" : [
+		"loggedInUser",
+		"localRepositories" ],
+	"name" : "GrContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+accessing
+allReviews
+
+	self subclassResponsibility

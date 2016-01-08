@@ -2,5 +2,5 @@ initialization
 withComment: aComment
 	commentModel := aComment.
 	self setTextMarkup.
-	commentText text: commentModel get.
+	commentText text: commentModel body.
 	^ self

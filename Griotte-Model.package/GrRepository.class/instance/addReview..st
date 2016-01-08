@@ -1,3 +1,4 @@
 accessing
 addReview: aReview
-	self reviews add: aReview
+
+	^ localReviews add: aReview

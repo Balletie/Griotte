@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-GitHub",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GrGitHubGroup",
+	"pools" : [
+		 ],
+	"super" : "GrGroup",
+	"type" : "normal" }

@@ -1,6 +1,7 @@
-I am a comment in a Griotte review.
+I am a comment on a review, either on a GrGroup or a GrReview (top-level).
 
-Like other objects in Griotte, I access my data through a service.
-I am responsible additionally for handling the edit of a comment.
+I can be edited using #edit:, and be accessed for information for when I was created, when I was last edited, my creator, and of course the comment body. Lastly I can be tested whether I was edited since being created or not.
 
-My main collaborator is GrUser.
+Public API and Key Messages
+
+- Use #edit: to edit the comment body.

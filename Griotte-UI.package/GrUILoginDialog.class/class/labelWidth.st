@@ -1,4 +1,0 @@
-accessing
-labelWidth
-
-	^ 75

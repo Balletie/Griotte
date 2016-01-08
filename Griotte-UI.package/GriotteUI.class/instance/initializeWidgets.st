@@ -5,12 +5,11 @@ initializeWidgets
 		title: 'Griotte';
 		instantiateModels: #( 
 			#reviewPanel #GrUIReviewPanel
-			#diff #DiffModel
-			#newCommentButton #ButtonModel
+			#reviewHolder #LabelModel
 			).
-	self diff
-		showOptions: false.
-	self newCommentButton
-		label: 'New comment'.
+	self reviewHolder
+		label: 'No review selected. Select a review in the reviewpanel on the left.'.
 	self reviewPanel addReviewButton
+		disable.
+	self reviewPanel openReviewButton
 		disable.

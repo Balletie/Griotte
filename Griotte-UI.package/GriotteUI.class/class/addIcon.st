@@ -1,3 +1,3 @@
 accessing
 addIcon
-	^ Smalltalk ui icons addIcon
+	^ Smalltalk ui icons add

@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"initializeWithAvatar:serviceObject:" : "SkipLentz 10/7/2015 15:21" },
+		 },
 	"instance" : {
-		"avatar" : "Skiplentz 10/2/2015 10:33",
-		"initializeWithAvatar:" : "SkipLentz 10/7/2015 14:29" } }
+		"allRepositories" : "SkipLentz 1/6/2016 14:21",
+		"avatar" : "SkipLentz 12/9/2015 14:55",
+		"isLoggedIn" : "SkipLentz 12/9/2015 13:58",
+		"username" : "SkipLentz 12/9/2015 14:48" } }

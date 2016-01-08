@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/7/2016 11:23",
+	"instvars" : [
+		"accepted",
+		"dialogModel" ],
+	"name" : "GrUIDialog",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

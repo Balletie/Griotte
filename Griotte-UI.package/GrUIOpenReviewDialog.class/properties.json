@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/7/2016 11:04",
+	"instvars" : [
+		"reviewDropList" ],
+	"name" : "GrUIOpenReviewDialog",
+	"pools" : [
+		 ],
+	"super" : "GrUIRepositoryDialog",
+	"type" : "normal" }

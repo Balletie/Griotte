@@ -1,3 +1,0 @@
-accessing
-editTime
-	self subclassResponsibility.

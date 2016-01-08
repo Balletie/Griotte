@@ -4,14 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SkipLentz 10/14/2015 13:43",
+	"commentStamp" : "SkipLentz 1/7/2016 10:55",
 	"instvars" : [
-		"repositoryDropList",
 		"reviewInputText",
-		"dialogModel",
-		"accepted" ],
+		"descriptionInputText" ],
 	"name" : "GrUINewReviewDialog",
 	"pools" : [
 		 ],
-	"super" : "ComposableModel",
+	"super" : "GrUIRepositoryDialog",
 	"type" : "normal" }

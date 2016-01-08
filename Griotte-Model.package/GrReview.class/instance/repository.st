@@ -1,3 +1,4 @@
 accessing
 repository
-	^ repository
+	" Return the repository I am in. "
+	self subclassResponsibility

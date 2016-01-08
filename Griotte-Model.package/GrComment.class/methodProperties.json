@@ -1,7 +1,15 @@
 {
 	"class" : {
-		"withUser:service:" : "Skiplentz 10/2/2015 11:08" },
+		"createOnGroup:withBody:" : "SkipLentz 12/9/2015 14:35",
+		"createOnReview:withBody:" : "SkipLentz 12/9/2015 14:33",
+		"groupClass" : "SkipLentz 12/9/2015 14:38",
+		"onGroup:withBody:" : "SkipLentz 12/9/2015 14:35",
+		"onReview:withBody:" : "SkipLentz 12/9/2015 14:33",
+		"reviewClass" : "SkipLentz 12/9/2015 14:36" },
 	"instance" : {
-		"author" : "Skiplentz 9/30/2015 13:50",
-		"initializeWithUser:" : "Skiplentz 9/30/2015 13:50",
-		"set:" : "Skiplentz 9/30/2015 11:36" } }
+		"body" : "SkipLentz 12/11/2015 10:43",
+		"createdAt" : "SkipLentz 1/6/2016 16:42",
+		"creator" : "SkipLentz 12/14/2015 14:55",
+		"edit:" : "SkipLentz 12/10/2015 15:30",
+		"editedAt" : "SkipLentz 1/6/2016 16:43",
+		"isEdited" : "SkipLentz 1/6/2016 16:45" } }

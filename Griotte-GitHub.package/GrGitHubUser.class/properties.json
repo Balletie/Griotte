@@ -1,0 +1,14 @@
+{
+	"category" : "Griotte-GitHub",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/8/2016 14:47",
+	"instvars" : [
+		"apiUser" ],
+	"name" : "GrGitHubUser",
+	"pools" : [
+		 ],
+	"super" : "GrUser",
+	"type" : "normal" }

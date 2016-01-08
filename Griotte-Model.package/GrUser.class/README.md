@@ -1,6 +1,9 @@
-I represent a user of Griotte, and not necessarily the user that is currently logged in.
+I represent a user which can do operations in a review.
 
-Like other objects in Griotte, I access my data through a service.
-I can answer whether the user is the current user, and/or the creator of a review.
+I am useful for identifying and distinguishing between different users, by means of an avatar and a username. Furthermore, I can be asked which repositories I own.
 
-(Add Collaborators)
+Public API and Key Messages
+
+- avatar: the avatar of this user. By default it is a question mark icon.
+- username: the username, by default 'Anonymous'.
+- allRepositories answers all of the repositories I own, not necessarily just local repositories.

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"comments" ],
 	"name" : "GrGroup",
 	"pools" : [
 		 ],
-	"super" : "GrServiceMappedObject",
+	"super" : "Object",
 	"type" : "normal" }

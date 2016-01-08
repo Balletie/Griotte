@@ -1,4 +1,4 @@
 accessing
 children
 
-	^ [ self content reviews ]
+	^ [ self content localReviews ]

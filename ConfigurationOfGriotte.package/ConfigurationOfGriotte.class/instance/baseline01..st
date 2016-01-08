@@ -8,7 +8,7 @@ baseline01: spec
 		spec
 			baseline: 'GitHub' with: [
 				spec
-					repository: 'github://Balletie/GitHub:demo-prototype-code' ];
+					repository: 'github://Balletie/GitHub:master' ];
 			import: 'GitHub';
 			configuration: 'Epicea' with: [
 				spec
@@ -21,9 +21,9 @@ baseline01: spec
 			package: 'Griotte-Model' with: [
 				spec requires: #('Griotte-Epicea') ];
 			package: 'Griotte-GitHub' with: [
-				spec requires: #('Griotte-Model' 'GitHub-Tool') ];
+				spec requires: #('Griotte-Model' 'tool') ];
 			package: 'Widget-Extensions-Balletie' with: [
-				spec file: 'Widget-Extensions-Balletie-SkipLentz.3'.
+				spec file: 'Widget-Extensions-Balletie-SkipLentz.7'.
 				spec repository: 'http://smalltalkhub.com/mc/Balletie/Widget-Extensions/main/' ];
 			package: 'Griotte-UI' with: [
 				spec requires: #('Griotte-Model' 'Griotte-GitHub' 'Widget-Extensions-Balletie') ]
