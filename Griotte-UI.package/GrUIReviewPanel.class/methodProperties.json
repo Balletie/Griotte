@@ -1,8 +1,5 @@
 {
 	"class" : {
-		"createReview" : "SkipLentz 10/8/2015 17:16",
-		"createReviewInRepo:" : "SkipLentz 10/15/2015 12:23",
-		"createReviewInRepo:withName:" : "SkipLentz 11/4/2015 16:20",
 		"defaultSpec" : "SkipLentz 1/7/2016 12:02" },
 	"instance" : {
 		"addReview:" : "SkipLentz 10/15/2015 11:14",

@@ -1,4 +1,0 @@
-*Griotte-GitHub
-isGitHubVersionCommit
-
-	^ false

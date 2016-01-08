@@ -1,4 +1,0 @@
-accessing
-editTime
-
-	^ apiObject updatedAt

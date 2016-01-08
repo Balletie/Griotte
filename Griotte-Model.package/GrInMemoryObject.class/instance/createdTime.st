@@ -1,3 +1,0 @@
-accessing
-createdTime
-	^ createdTimestamp

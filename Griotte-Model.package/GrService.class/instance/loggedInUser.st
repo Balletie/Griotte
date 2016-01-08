@@ -1,3 +1,0 @@
-accessing
-loggedInUser
-	self subclassResponsibility.
