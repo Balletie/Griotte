@@ -1,0 +1,19 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/7/2016 16:21",
+	"instvars" : [
+		"reviewModel",
+		"titleLabel",
+		"avatarImage",
+		"usernameLabel",
+		"descriptionText",
+		"commentList" ],
+	"name" : "GrUIReview",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

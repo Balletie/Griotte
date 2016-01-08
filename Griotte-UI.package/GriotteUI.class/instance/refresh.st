@@ -1,5 +1,5 @@
 actions
 refresh
 
-	reviewPanel selectedReview ifNotNil: [
-		self showCommentsFor: reviewPanel selectedReview ]
+	review ifNotNil: [
+		review loadComments ]

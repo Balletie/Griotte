@@ -12,6 +12,6 @@ initializeWidgets
 		acceptOnCR: false;
 		disable.
 	self editIcon
-		label: 'Edit';
+		label: 'Edit    ';
 		icon: GriotteUI editIcon;
 		help: 'Edit this comment'.

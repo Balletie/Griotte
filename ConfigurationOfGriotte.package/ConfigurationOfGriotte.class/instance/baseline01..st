@@ -23,7 +23,7 @@ baseline01: spec
 			package: 'Griotte-GitHub' with: [
 				spec requires: #('Griotte-Model' 'tool') ];
 			package: 'Widget-Extensions-Balletie' with: [
-				spec file: 'Widget-Extensions-Balletie-SkipLentz.6'.
+				spec file: 'Widget-Extensions-Balletie-SkipLentz.7'.
 				spec repository: 'http://smalltalkhub.com/mc/Balletie/Widget-Extensions/main/' ];
 			package: 'Griotte-UI' with: [
 				spec requires: #('Griotte-Model' 'Griotte-GitHub' 'Widget-Extensions-Balletie') ]

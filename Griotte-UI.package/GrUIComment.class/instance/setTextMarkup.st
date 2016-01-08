@@ -1,4 +1,4 @@
-accessing
+initialization
 setTextMarkup
 
 	| preAuthorString postAuthorPreTimeString timeStampString postTimeString infoText |

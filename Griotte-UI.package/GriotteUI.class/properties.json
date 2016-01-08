@@ -8,10 +8,8 @@
 	"instvars" : [
 		"currentContext",
 		"contexts",
-		"newCommentButton",
-		"commentList",
 		"windowModel",
-		"reviewPanel" ],
+		"review" ],
 	"name" : "GriotteUI",
 	"pools" : [
 		 ],

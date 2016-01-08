@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"avatarSize" : "SkipLentz 1/8/2016 11:33",
+		"defaultSpec" : "SkipLentz 1/8/2016 11:33" },
+	"instance" : {
+		"avatarImage" : "SkipLentz 1/8/2016 11:27",
+		"commentList" : "SkipLentz 1/7/2016 16:43",
+		"commentListInternal" : "SkipLentz 1/7/2016 16:43",
+		"descriptionText" : "SkipLentz 1/7/2016 16:16",
+		"initializeWidgets" : "SkipLentz 1/8/2016 12:09",
+		"loadComments" : "SkipLentz 1/7/2016 16:43",
+		"newCommentList" : "SkipLentz 1/7/2016 16:08",
+		"titleLabel" : "SkipLentz 1/7/2016 16:16",
+		"usernameLabel" : "SkipLentz 1/8/2016 11:27",
+		"withReview:" : "SkipLentz 1/8/2016 12:10" } }

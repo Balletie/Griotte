@@ -3,14 +3,7 @@ specLayout
 	<spec: #default>
 	^ SpecLayout composed newRow: [ :row | 
 		row
-			add: #reviewPanel width: 400;
+			add: #reviewPanel width: 300;
 			addSplitter;
-			newColumn: [ :col |
-				col
-					add: #commentList;
-					newRow: [ :buttons |
-						buttons
-							add: #newCommentButton.
-					] height: self buttonHeight.
-			].
+			add: #reviewHolder
 		].
