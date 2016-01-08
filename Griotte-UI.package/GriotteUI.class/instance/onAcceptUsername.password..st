@@ -5,6 +5,6 @@ onAcceptUsername: usernameInput password: passwordInput
 	api := GitHub
 		initializeWithUsername: usernameInput text
 		password: passwordInput text.
-	user := GrNGitHubLoggedInUser onAPIUser: api user.
-	currentContext value: (GrNContext withLoggedInUser: user).
+	user := GrGitHubLoggedInUser onAPIUser: api user.
+	currentContext value: (GrContext withLoggedInUser: user).
 	contexts add: currentContext value

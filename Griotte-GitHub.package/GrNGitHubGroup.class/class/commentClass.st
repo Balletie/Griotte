@@ -1,4 +1,0 @@
-accessing
-commentClass
-
-	^ GrNGitHubGroupComment

@@ -1,4 +1,0 @@
-accessing
-reviewClass
-
-	^ GrNGitHubRepository reviewClass
