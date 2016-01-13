@@ -1,4 +1,4 @@
 actions
 reject
 
-	^ self pullRequest close
+	^ self pullRequest editor close execute
