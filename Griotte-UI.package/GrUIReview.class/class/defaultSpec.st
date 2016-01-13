@@ -8,7 +8,9 @@ defaultSpec
 			newRow: [ :row |
 				row
 					add: #avatarImage width: self avatarSize;
-					add: #usernameLabel ]
+					add: #usernameLabel;
+					add: #approveButton width: 80;
+					add: #rejectButton width: 80 ]
 				height: self toolbarHeight;
 			add: #descriptionText;
 			add: #commentList
