@@ -1,12 +1,12 @@
 {
 	"class" : {
-		"defaultSpec" : "SkipLentz 1/8/2016 11:40" },
+		"defaultSpec" : "SkipLentz 1/13/2016 16:36" },
 	"instance" : {
 		"commentModel" : "Skiplentz 10/1/2015 10:52",
 		"commentText" : "Skiplentz 9/25/2015 10:48",
-		"editIcon" : "Skiplentz 9/25/2015 15:35",
+		"daysSince:" : "SkipLentz 1/13/2016 16:39",
 		"infoLabel" : "Skiplentz 9/28/2015 11:04",
-		"initializePresenter" : "SkipLentz 1/6/2016 16:25",
-		"initializeWidgets" : "SkipLentz 1/8/2016 11:40",
-		"setTextMarkup" : "SkipLentz 1/6/2016 17:57",
+		"initializePresenter" : "SkipLentz 1/13/2016 16:36",
+		"initializeWidgets" : "SkipLentz 1/13/2016 16:35",
+		"setTextMarkup" : "SkipLentz 1/13/2016 16:41",
 		"withComment:" : "SkipLentz 1/6/2016 16:24" } }

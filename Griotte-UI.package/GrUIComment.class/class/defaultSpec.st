@@ -6,8 +6,7 @@ defaultSpec
 		col
 			newRow: [ :row |
 				row
-					add: #infoLabel;
-					add: #editIcon width: GriotteUI editIcon width + 60.
+					add: #infoLabel
 			] height: self toolbarHeight;
 			add: #commentText
 	]
