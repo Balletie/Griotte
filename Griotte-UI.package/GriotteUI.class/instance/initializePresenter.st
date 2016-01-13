@@ -3,10 +3,7 @@ initializePresenter
 	self reviewPanel whenSelectedReviewChanged: [ :item |
 		" Check if it REALLY changed, to avoid unnecessarily creating objects. "
 		item == self reviewPanel selectedReview ifFalse: [
-			self
-				assign: (review := GrUIReview new withReview: item)
-				to: #reviewHolder.
-			self rebuild ] ].
+			self setActiveReview: item ] ].
 
 	self reviewPanel addReviewButton
 		action: [ | rev |
