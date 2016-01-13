@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGriotte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/13/2016 15:58",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGriotte",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
