@@ -9,7 +9,7 @@
 		"authenticatedMenu" : "SkipLentz 1/6/2016 18:09",
 		"initialExtent" : "SkipLentz 1/8/2016 15:54",
 		"initialize" : "SkipLentz 1/7/2016 12:01",
-		"initializePresenter" : "SkipLentz 1/13/2016 16:31",
+		"initializePresenter" : "SkipLentz 1/14/2016 14:02",
 		"initializeWidgets" : "SkipLentz 1/14/2016 11:31",
 		"onAcceptUsername:password:" : "SkipLentz 1/8/2016 13:53",
 		"rebuild" : "SkipLentz 1/14/2016 11:40",
@@ -19,4 +19,4 @@
 		"setActiveReview:" : "SkipLentz 1/14/2016 11:32",
 		"showAuthenticatedMenu" : "SkipLentz 12/14/2015 17:56",
 		"showLoginMenu" : "SkipLentz 12/14/2015 17:55",
-		"showRepositoryDialog:withInitialGuess:" : "SkipLentz 1/7/2016 15:46" } }
+		"showRepositoryDialog:withInitialGuess:onAccept:" : "SkipLentz 1/14/2016 14:01" } }

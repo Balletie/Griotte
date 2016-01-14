@@ -1,6 +1,5 @@
 initialization
 initialize
-
 	super initialize.
-	accepted := false.
-	self open.
+	dialogModel := self openDialogWithSpec.
+	dialogModel okAction: [ self createProduct ]
