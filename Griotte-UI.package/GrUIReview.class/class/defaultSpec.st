@@ -13,5 +13,10 @@ defaultSpec
 					add: #rejectButton width: 80 ]
 				height: self toolbarHeight;
 			add: #descriptionText;
-			add: #commentList
+			addSplitter;
+			add: #commentList;
+			newRow: [ :row |
+				row
+					add: #newCommentButton width: 100 ]
+				height: self toolbarHeight
 	]

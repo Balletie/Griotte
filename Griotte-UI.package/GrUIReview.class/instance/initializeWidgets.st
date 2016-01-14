@@ -2,7 +2,8 @@ initialization
 initializeWidgets
 
 	titleLabel := self newLabel.
-	descriptionText := self newTextInput.
+	descriptionText := self newTextInput
+		acceptOnCR: false.
 	avatarImage := self newImage.
 	usernameLabel := self newLabel.
 	approveButton := self newButton
@@ -11,3 +12,5 @@ initializeWidgets
 	rejectButton := self newButton
 		label: 'Reject';
 		icon: Smalltalk ui icons smallCancel.
+	newCommentButton := self newButton
+		label: 'New comment'

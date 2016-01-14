@@ -13,7 +13,8 @@
 		"approveButton",
 		"rejectButton",
 		"descriptionText",
-		"commentList" ],
+		"commentList",
+		"newCommentButton" ],
 	"name" : "GrUIReview",
 	"pools" : [
 		 ],

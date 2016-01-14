@@ -1,16 +1,17 @@
 {
 	"class" : {
 		"avatarSize" : "SkipLentz 1/8/2016 11:33",
-		"defaultSpec" : "SkipLentz 1/13/2016 17:07" },
+		"defaultSpec" : "SkipLentz 1/14/2016 11:24" },
 	"instance" : {
 		"approveButton" : "SkipLentz 1/13/2016 17:00",
 		"avatarImage" : "SkipLentz 1/8/2016 11:27",
 		"commentList" : "SkipLentz 1/7/2016 16:43",
 		"commentListInternal" : "SkipLentz 1/7/2016 16:43",
 		"descriptionText" : "SkipLentz 1/7/2016 16:16",
-		"initializePresenter" : "SkipLentz 1/13/2016 17:10",
-		"initializeWidgets" : "SkipLentz 1/13/2016 17:09",
+		"initializePresenter" : "SkipLentz 1/14/2016 13:59",
+		"initializeWidgets" : "SkipLentz 1/14/2016 11:23",
 		"loadComments" : "SkipLentz 1/7/2016 16:43",
+		"newCommentButton" : "SkipLentz 1/13/2016 17:23",
 		"newCommentList" : "SkipLentz 1/7/2016 16:08",
 		"rejectButton" : "SkipLentz 1/13/2016 17:00",
 		"titleLabel" : "SkipLentz 1/7/2016 16:16",

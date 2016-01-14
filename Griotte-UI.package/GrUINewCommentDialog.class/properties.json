@@ -1,0 +1,15 @@
+{
+	"category" : "Griotte-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SkipLentz 1/13/2016 17:34",
+	"instvars" : [
+		"commentText",
+		"reviewOrGroup" ],
+	"name" : "GrUINewCommentDialog",
+	"pools" : [
+		 ],
+	"super" : "GrUIDialog",
+	"type" : "normal" }
