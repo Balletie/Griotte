@@ -5,5 +5,5 @@ specLayout
 		row
 			add: #reviewPanel width: 300;
 			addSplitter;
-			add: #reviewHolder
+			add: #review
 		].

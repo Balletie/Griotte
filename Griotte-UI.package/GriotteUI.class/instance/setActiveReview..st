@@ -1,6 +1,6 @@
 actions
 setActiveReview: item
-	self
-		assign: (review := GrUIReview new withReview: item)
-		to: #reviewHolder.
+
+	review := self instantiate: GrUIReview.
+	review withReview: item.
 	^ self rebuild

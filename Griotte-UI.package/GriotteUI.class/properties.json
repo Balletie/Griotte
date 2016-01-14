@@ -8,7 +8,7 @@
 	"instvars" : [
 		"currentContext",
 		"contexts",
-		"windowModel",
+		"reviewPanel",
 		"review" ],
 	"name" : "GriotteUI",
 	"pools" : [

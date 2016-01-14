@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 daysSince: aDateAndTime
 
 	^ ((DateAndTime now - aDateAndTime) roundTo: 1 day)
