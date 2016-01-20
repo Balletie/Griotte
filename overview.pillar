@@ -4,4 +4,36 @@
 !Overview
 @overview
 
-Blablabla.
+''Griotte'' is an ''experiment'' with two goals:
+
+# Improving the code review process in the *Pharo>http://pharo.org* programming language and environment.
+# Improving code review in general.
+
+In general, we aim to improve code review with the concept of ''groups of changes''. This document does not go in-depth on this topic, but there are other documents which discuss this topic.
+
+Within Pharo specifically, one of the goals was to leverage existing services for doing code review, and creating a frontend within Pharo to use them. This means that one uses for example GitHub as their backend, and doing the code review process within Pharo. The Pharo frontend then enables the use of groups and other special features by storing metadata in the backend service. One can imagine using ==git-notes== to do this in the case of Git repositories.
+
+There is currently one backend implementation which is for GitHub. It uses the *GitHub API Bindings>https://balletie.github.io/GitHub* internally. It also serves as a reference implementation for possible future backends.
+
+Currently, both the UI and the model don't actually allow for full code review yet. The aforementioned concept of ''groups'' is yet to be implemented, and it is the main component which will enable the process of code review.
+
+!!Further Documentation
+
+The documentation is split into three parts:
+
+# The Model: Explains briefly the model of Griotte, and Epicea's fine-grained IDE events.
+# Backends: How Griotte integrates with backends and versioning tools.
+# The UI: Some words about the UI, and approaches for extending it.
+
+!!Installation
+
+To install and try Griotte, run the following Metacello script (taken from the *homepage>https://balletie.github.io/Griotte*) in a Pharo 5 image:
+
+[[[language=smalltalk
+Metacello new
+	baseline: 'Griotte';
+	repository: 'github://Balletie/Griotte:master';
+	load.
+]]]
+
+This will also load a tool to do basic versioning in GitHub repositories. Griotte integrates with this tool to create new reviews.
