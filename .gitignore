@@ -1,0 +1,14 @@
+# Emacs and vim
+*~
+*.swp
+
+# Ignore backup files for doclinking
+*.bak
+
+# Ignore build files for pillar
+Pharo.changes
+Pharo.image
+pharo-vm/
+pharo
+pharo-ui
+pillar
