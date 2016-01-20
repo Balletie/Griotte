@@ -24,6 +24,10 @@ Replace the ==master== part with any version tag to load that specific version.
 
 The documentation was generated with the *Pillar markup language>https://github.com/pillar-markup/pillar-documentation*. The source of this documentation can be found under the ==*docs>https://github.com/Balletie/Griotte/tree/docs*== branch in the source code repository.
 
+!!Screenshots
+
++Griotte open with an example review>./figures/griotte.png+
+
 !!Source code repository
 
 The code is hosted on GitHub, at *Balletie/Griotte>https://github.com/Balletie/Griotte*.
