@@ -22,9 +22,54 @@
       <section>
 <h1>The UI</h1>
 <a id="ui"></a><p>
-Griotte's UI is created by means of loosely coupled UI widgets wrapped around a <a href="model.html#model">2 model object</a>. They are prefixed with <code>GrUI</code> to distinguished between the two. For example, there are <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIReview.class/README.md">GrUIReview</a></code> and <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIComment.class/README.md">GrUIComment</a></code>, which allow to perform the operations on the model objects they wrap through a graphical interface.
+Griotte's UI is created by means of loosely coupled UI widgets wrapped around a <a href="model.html#model">2 model object</a>. The widgets are implemented with <a href="http://spec.st">Spec</a>.
+</p>
+<section>
+<h2>4.1. The widgets</h2>
 
-</p></section>
+<p>
+The widgets are prefixed with <code>GrUI</code> to distinguished between the two. For example, there are <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIReview.class/README.md">GrUIReview</a></code> and <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIComment.class/README.md">GrUIComment</a></code>, which allow to perform the operations on the model objects they wrap through a graphical interface. Thus if one has a <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/README.md">GrComment</a></code> object, one can do something like this to open a comment window allowing to edit the comment's body:
+</p>
+<figure><pre><code class="smalltalk">| comment |
+&quot; comment is an instance of GrComment. &quot;
+GrUIComment new
+	withComment: comment;
+	openWithSpec</code></pre><figcaption></figcaption></figure>
+
+<p>
+Similarly, to open a window for a <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrReview.class/README.md">GrReview</a></code> instance:
+</p>
+<figure><pre><code class="smalltalk">| review |
+&quot; review is an instance of GrReview. &quot;
+GrUIReview new
+	withReview: review;
+	openWithSpec</code></pre><figcaption></figcaption></figure>
+
+<section>
+<h3>Creating new widgets</h3>
+
+<p>
+With these loose widgets, one can easily recompose the UI. Thus it is desirable that when creating new widgets (e.g. for <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrGroup.class/README.md">GrGroup</a></code>s, which are not implemented) a similar pattern is followed.
+</p>
+<p>
+The widget should support the operations through its UI in one way or another. This can be done with buttons, but also with textfields and the <code>Control + S</code> (Windows/Linux) or <code>Command + S</code> (OSX) shortcuts. The latter has been done for editing the body of a comment.
+</p>
+</section></section><section>
+<h2>4.2. Dialogs</h2>
+
+<p>
+Some utility classes for dialogs were created, which ease the creation of new dialogs. These are subclasses of <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIDialog.class/README.md">GrUIDialog</a></code>, which contains a class comment with information to implement a new dialog class.
+</p>
+</section><section>
+<h2>4.3. The Main Window</h2>
+
+<p>
+The main user interface, <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GriotteUI.class/README.md">GriotteUI</a></code>, uses <code>AbstractLoginModel</code> as its boilerplate for displaying a username and password textfield for logging in. It is defined in the <a href="http://smalltalkhub.com/#!/~Balletie/Widget-Extensions">Widget-Extensions-Balletie</a> package. It is separate from Griotte's repository as it is used by the GitHub tool as well.
+</p>
+<p>
+The class comment for <code>AbstractLoginModel</code> should provide enough information to use it.
+
+</p></section></section>
     </div>
     <!-- Syntax highlighting of code blocks -->
     <script>hljs.initHighlightingOnLoad();</script>

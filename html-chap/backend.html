@@ -23,9 +23,86 @@
 <h1>Backends</h1>
 <a id="backend"></a>
 <p>
-Without a backend implementation, Griotte by itself can not do anything.
+Without a backend implementation, Griotte by itself cannot do anything. This documentation shows how backends are implemented, and what the connection is with versioning tools. The connection with versioning tools is explained because most code review services are tied to some versioning system.
+</p>
+<p>
+Griotte comes shipped with a reference implementation for using it with <a href="https://github.com">GitHub</a>. Thus, examples from this implementation are given where appropriate.
+</p>
+<p>
+In the case of the GitHub backend, everything is delegated to the <a href="https://balletie.github.io/GitHub">GitHub API Bindings</a>. 
+</p>
+<section>
+<h2>3.1. Creating a Backend</h2>
 
-</p></section>
+<p>
+A backend is implemented by realizing and implementing the model classes discussed in the <a href="model.html#model">2 model section</a>. Here a summary is given of what needs to be implemented to conform to the model.
+</p>
+<section>
+<h3>Storing groups</h3>
+
+<p>
+The backend needs to store the groups of information in some way, such that they can be found again when another reviewer opens the review in Griotte's UI.
+</p>
+<p>
+In the case of Git-based repositories, this can be done using <a href="http://git-scm.com/docs/git-notes">git-notes</a> in some ref namespace (such as <code>refs/griotte</code>).
+</p>
+</section><section>
+<h3>Creation of reviews and comments</h3>
+
+<p>
+The backend needs to be able to create reviews on repositories. Further, it needs to be able to create comments on reviews (top-level comments) and on groups. The creation of these two are done in their class-side creation methods:
+</p>
+<dl><dt><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrReview.class/README.md">GrReview</a> class</code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrReview.class/class/createOnRepository.withTitle.description..st">createOnRepository:withTitle:description:</a></code></dt>
+<dd>As the name suggests, it creates a review with that title and description on the repository given in the first parameter.</dd>
+<dd>You might notice that there is no mention of a <em>branch</em> which has to be merged into another. As these are specific to some backends, it is left as a responsibility of the backend to determine which set of changed is to be integrated, and where it is to be integrated.</dd>
+<dd>In the case of Git-based repositories, one can take the currently checked out branch and integrate it in the default branch.</dd>
+<dd>The GitHub backend analyzes the <a href="model.html#epicea">2.2 Epicea</a> log and finds the latest commit. Then the branch this commit was done on will be merged with the repository's default branch. View <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubReview.class/README.md">GrGitHubReview</a> class</code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubReview.class/class/createOnRepository.withTitle.description..st">createOnRepository:withTitle:description:</a></code> for the implementation.</dd>
+<dt><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/README.md">GrComment</a> class</code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/class/createOnReview.withBody..st">createOnReview:withBody:</a></code></dt>
+<dt><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/README.md">GrComment</a> class</code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/class/createOnGroup.withBody..st">createOnGroup:withBody:</a></code></dt>
+<dd>Two creation methods are provided for creating comments, to distinguish between creating a comment on a review and on a group.</dd>
+</dl>
+
+</section><section>
+<h3>Accessing information</h3>
+
+<p>
+The implementation should be able to provide a list of repositories for a given user, and for each repository a list of reviews. These functionalities are implemented by the GitHub backend with <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubUser.class/README.md">GrGitHubUser</a></code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubUser.class/instance/allRepositories.st">allRepositories</a></code> and <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubRepository.class/README.md">GrGitHubRepository</a></code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-GitHub.package/GrGitHubRepository.class/instance/allReviews.st">allReviews</a></code>.
+</p>
+<p>
+For reviews and groups, the comments of both should be able to be provided as <code>Collection</code>s containing <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrComment.class/README.md">GrComment</a></code>s.
+</p>
+<p>
+Further things that should be able to be accessed are obvious:
+</p>
+<ul>
+<li>The creator, description, title of a review.</li>
+<li>The creator, body, creation time and update time of a comment.</li>
+<li>For a user, not much. It allows for anonymous users, meaning anyone can change any comment or review as one likes. If such operations are not possible, then it means that there is some concept of a user being logged in. Thus one might want to implement <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrUser.class/README.md">GrUser</a></code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrUser.class/instance/avatar.st">avatar</a></code> and <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrUser.class/README.md">GrUser</a></code><code>&gt;&gt;</code><code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-Model.package/GrUser.class/instance/username.st">username</a></code></li>
+<li>For a repository, its name.</li>
+</ul>
+
+</section></section><section>
+<h2>3.2. The Connection with Version Control Systems</h2>
+
+<p>
+Griotte's model is agnostic about its connection to Version Control Systems (VCS). Thus, which branch has to be merged into which has to be determined by the backend implementation.
+</p>
+<section>
+<h3>Porting over responsibilities</h3>
+
+<p>
+Griotte relies on external tool support for the backends. However, it might be necessary to port some of the responsibility over to Griotte's model. For example, if specifying which branches should be merged into which is desirable to be done from Griotte's UI, the model needs to be adapted for this.
+</p>
+</section><section>
+<h3>Using a Visitor for backend-specific UI</h3>
+
+<p>
+Another approach might be to allow for flexible creation of backend-specific UI. This however does pose a challenge on integrating it within Griotte's main UI. One approach might be to extend the model with a <a href="https://en.wikipedia.org/wiki/Visitor_pattern">Visitor Pattern</a>, which can visit specific backend implementations. This way, the UI stays more separated from the model, while still allowing for creating backend-specific UI.
+</p>
+<p>
+As Pharo supports extension methods, the Visitor implementation can easily be adapted for additional future backends.
+
+</p></section></section></section>
     </div>
     <!-- Syntax highlighting of code blocks -->
     <script>hljs.initHighlightingOnLoad();</script>
