@@ -1,0 +1,6 @@
+{
+  "title": "The UI"
+}
+!The UI
+@ui
+Griotte's UI is created by means of loosely coupled UI widgets wrapped around a *model object>model.pillar@model*. They are prefixed with ==GrUI== to distinguished between the two. For example, there are ==GrUIReview== and ==GrUIComment==, which allow to perform the operations on the model objects they wrap through a graphical interface.

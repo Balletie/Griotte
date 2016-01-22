@@ -1,0 +1,7 @@
+{
+  "title": "Backends"
+}
+!Backends
+@backend
+
+Without a backend implementation, Griotte by itself can not do anything.

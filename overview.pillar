@@ -4,7 +4,7 @@
 !Overview
 @overview
 
-''Griotte'' is an ''experiment'' with two goals:
+''Griotte'' is an ''experiment'' in Modern Code Review with two goals:
 
 # Improving the code review process in the *Pharo>http://pharo.org* programming language and environment.
 # Improving code review in general.
@@ -21,9 +21,9 @@ Currently, both the UI and the model don't actually allow for full code review y
 
 The documentation is split into three parts:
 
-# The Model: Explains briefly the model of Griotte, and Epicea's fine-grained IDE events.
-# Backends: How Griotte integrates with backends and versioning tools.
-# The UI: Some words about the UI, and approaches for extending it.
+# *The Model>model.pillar@model*: Explains briefly the model of Griotte, and Epicea's fine-grained IDE events.
+# *Backends>backend.pillar@backend*: How Griotte integrates with backends and versioning tools.
+# *The UI>ui.pillar@ui*: Some words about the UI, and approaches for extending it.
 
 !!Installation
 
