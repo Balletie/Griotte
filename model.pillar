@@ -4,6 +4,10 @@
 !The Model
 @model
 
+This part describes the abstractions, or model, relevant to Griotte. It discusses Griotte's own model, as well as ''Epicea'''s model for ''fine-grained IDE events''.
+
+!!Griotte's Model
+
 Griotte's model consists of several abstract classes which require to be implemented by a backend. In other words, the classes of the model define a set of operations and accessors which a backend should be able to perform and provide for. The model is defined as follows:
 
 ;==GrUser==
@@ -23,4 +27,29 @@ Griotte's model consists of several abstract classes which require to be impleme
 :A backend can of course distinguish between these two if it is necessary for the implementation.
 ;==GrContext==
 :A relatively late addition to the model, this class represents the connection between the repositories that are locally active (those with locally active reviews), and the user that is logged in.
-:Griotte should allow for multiple contexts to be present at the same time, allowing to use different backends transparently, and for ''context switching''.
+:The interface of Griotte should allow for multiple contexts to be present at the same time, for using different backends transparently, and for ''context switching'' between logins.
+
+!!!Local and Non-Local
+
+In the above descriptions of the model classes, there are some references to local and non-local repositories or reviews. Local reviews are the reviews which are considered ''active'' — that is to say, the reviews that are relevant and being operated on. Local repositories are similar: they contain local reviews.
+
+It might be desirable to support operations to remove local repositories or reviews, after you are done with reviewing for example.
+
+!!Epicea Fine-Grained IDE Events
+
+Epicea is a *Pharo>http://pharo.org* project for recording the actions of a developer within the IDE. It was originally created for the PhD thesis of Martín Dias. That which is recorded by Epicea is much more than what is recorded in the Version Control System (e.g. Git) at the point of commit; for example, Epicea records the following:
+
+- Each save of a code change (e.g. Class addition, method modification).
+- Test runs and their respective outcomes.
+- Versioning operations (commits, checkouts).
+- Refactorings.
+
+In this sense we say that the events Epicea records are ''fine-grained'', in contrast with the ''coarse-grained'' information stored by Version Control Systems.
+
+The information provided by Epicea allows one to ''group'' changes together when committing them. These groups can then in turn be used for code review. The grouping can be done using the ''Epicea Untangler''.
+
+!!!Epicea Untangler
+
+Epicea Untangler is a tool which presents the developer with grouped (or ''untangled'') changes derived through machine learning algorithms. See the *relevant paper>https://hal.inria.fr/hal-01116225* (Dias et al.) for more details.
+
+The untangler can work together with Griotte when submitting a review. When the groups are correct, Griotte can store the groups in the backend service. How the storing is done is the responsibility of the backend implementations.
