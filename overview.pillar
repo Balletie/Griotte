@@ -9,7 +9,7 @@
 # Improving the code review process in the *Pharo>http://pharo.org* programming language and environment.
 # Improving code review in general.
 
-In general, we aim to improve code review with the concept of ''groups of changes''. This document does not go in-depth on this topic, but there are other documents which discuss this topic.
+In general, we aim to improve code review by exploiting information provided by *''fine-grained IDE events''>model.pillar@epicea*. Most notably this comes in the form of ''groups of changes''. Read the extended abstract and presentation slides given on the *homepage>https://balletie.github.io/Griotte* for more information on this topic. The documentation pages will discuss them briefly too.
 
 Within Pharo specifically, one of the goals was to leverage existing services for doing code review, and creating a frontend within Pharo to use them. This means that one uses for example GitHub as their backend, and doing the code review process within Pharo. The Pharo frontend then enables the use of groups and other special features by storing metadata in the backend service. One can imagine using ==git-notes== to do this in the case of Git repositories.
 
