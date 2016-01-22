@@ -3,4 +3,42 @@
 }
 !The UI
 @ui
-Griotte's UI is created by means of loosely coupled UI widgets wrapped around a *model object>model.pillar@model*. They are prefixed with ==GrUI== to distinguished between the two. For example, there are ==GrUIReview== and ==GrUIComment==, which allow to perform the operations on the model objects they wrap through a graphical interface.
+Griotte's UI is created by means of loosely coupled UI widgets wrapped around a *model object>model.pillar@model*. The widgets are implemented with *Spec>http://spec.st*.
+
+!!The widgets
+
+The widgets are prefixed with ==GrUI== to distinguished between the two. For example, there are ==GrUIReview== and ==GrUIComment==, which allow to perform the operations on the model objects they wrap through a graphical interface. Thus if one has a ==GrComment== object, one can do something like this to open a comment window allowing to edit the comment's body:
+
+[[[language=smalltalk
+| comment |
+" comment is an instance of GrComment. "
+GrUIComment new
+	withComment: comment;
+	openWithSpec
+]]]
+
+Similarly, to open a window for a ==GrReview== instance:
+
+[[[language=smalltalk
+| review |
+" review is an instance of GrReview. "
+GrUIReview new
+	withReview: review;
+	openWithSpec
+]]]
+
+!!!Creating new widgets
+
+With these loose widgets, one can easily recompose the UI. Thus it is desirable that when creating new widgets (e.g. for ==GrGroup==s, which are not implemented) a similar pattern is followed.
+
+The widget should support the operations through its UI in one way or another. This can be done with buttons, but also with textfields and the ==Control + S== (Windows/Linux) or ==Command + S== (OSX) shortcuts. The latter has been done for editing the body of a comment.
+
+!!Dialogs
+
+Some utility classes for dialogs were created, which ease the creation of new dialogs. These are subclasses of ==GrUIDialog==, which contains a class comment with information to implement a new dialog class.
+
+!!The Main Window
+
+The main user interface, ==GriotteUI==, uses ==AbstractLoginModel== as its boilerplate for displaying a username and password textfield for logging in. It is defined in the *Widget-Extensions-Balletie>http://smalltalkhub.com/#!/~Balletie/Widget-Extensions* package. It is separate from Griotte's repository as it is used by the GitHub tool as well.
+
+The class comment for ==AbstractLoginModel== should provide enough information to use it.
