@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Griotte: Code Review for Pharo</title>
+    <title>The Model</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Highlight js -->
@@ -19,57 +19,8 @@
   </head>
   <body>
     <div id="content" class="inner">
-      <h1 class="top">Griotte: Code Review for Pharo</h1>
-      <h3>Developer Documentation</h3>
       <section>
-<h1>1. Overview</h1>
-<a id="overview"></a>
-<p>
-<em>Griotte</em> is an <em>experiment</em> in Modern Code Review with two goals:
-</p>
-<ol><li>Improving the code review process in the <a href="http://pharo.org">Pharo</a> programming language and environment.</li>
-<li>Improving code review in general.</li>
-</ol>
-
-<p>
-In general, we aim to improve code review with the concept of <em>groups of changes</em>. This document does not go in-depth on this topic, but there are other documents which discuss this topic.
-</p>
-<p>
-Within Pharo specifically, one of the goals was to leverage existing services for doing code review, and creating a frontend within Pharo to use them. This means that one uses for example GitHub as their backend, and doing the code review process within Pharo. The Pharo frontend then enables the use of groups and other special features by storing metadata in the backend service. One can imagine using <code>git-notes</code> to do this in the case of Git repositories.
-</p>
-<p>
-There is currently one backend implementation which is for GitHub. It uses the <a href="https://balletie.github.io/GitHub">GitHub API Bindings</a> internally. It also serves as a reference implementation for possible future backends.
-</p>
-<p>
-Currently, both the UI and the model don't actually allow for full code review yet. The aforementioned concept of <em>groups</em> is yet to be implemented, and it is the main component which will enable the process of code review.
-</p>
-<section>
-<h2>1.1. Further Documentation</h2>
-
-<p>
-The documentation is split into three parts:
-</p>
-<ol><li><a href="#model">2 The Model</a>: Explains briefly the model of Griotte, and Epicea's fine-grained IDE events.</li>
-<li><a href="#backend">3 Backends</a>: How Griotte integrates with backends and versioning tools.</li>
-<li><a href="#ui">4 The UI</a>: Some words about the UI, and approaches for extending it.</li>
-</ol>
-
-</section><section>
-<h2>1.2. Installation</h2>
-
-<p>
-To install and try Griotte, run the following Metacello script (taken from the <a href="https://balletie.github.io/Griotte">homepage</a>) in a Pharo 5 image:
-</p>
-<figure><pre><code class="smalltalk">Metacello new
-	baseline: 'Griotte';
-	repository: 'github://Balletie/Griotte:master';
-	load.</code></pre><figcaption></figcaption></figure>
-
-<p>
-This will also load a tool to do basic versioning in GitHub repositories. Griotte integrates with this tool to create new reviews.
-
-</p></section></section><section>
-<h1>2. The Model</h1>
+<h1>The Model</h1>
 <a id="model"></a>
 <p>
 Griotte's model consists of several abstract classes which require to be implemented by a backend. In other words, the classes of the model define a set of operations and accessors which a backend should be able to perform and provide for. The model is defined as follows:
@@ -93,18 +44,7 @@ Griotte's model consists of several abstract classes which require to be impleme
 <dd>A relatively late addition to the model, this class represents the connection between the repositories that are locally active (those with locally active reviews), and the user that is logged in.</dd>
 <dd>Griotte should allow for multiple contexts to be present at the same time, allowing to use different backends transparently, and for <em>context switching</em>.</dd>
 </dl>
-</section><section>
-<h1>3. Backends</h1>
-<a id="backend"></a>
-<p>
-Without a backend implementation, Griotte by itself can not do anything.
-
-</p></section><section>
-<h1>4. The UI</h1>
-<a id="ui"></a><p>
-Griotte's UI is created by means of loosely coupled UI widgets wrapped around a <a href="#model">2 model object</a>. They are prefixed with <code>GrUI</code> to distinguished between the two. For example, there are <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIReview.class/README.md">GrUIReview</a></code> and <code><a href="https://github.com/Balletie/Griotte/tree/master/Griotte-UI.package/GrUIComment.class/README.md">GrUIComment</a></code>, which allow to perform the operations on the model objects they wrap through a graphical interface.
-
-</p></section>
+</section>
     </div>
     <!-- Syntax highlighting of code blocks -->
     <script>hljs.initHighlightingOnLoad();</script>
