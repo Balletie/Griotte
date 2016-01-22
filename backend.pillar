@@ -4,4 +4,58 @@
 !Backends
 @backend
 
-Without a backend implementation, Griotte by itself can not do anything.
+Without a backend implementation, Griotte by itself cannot do anything. This documentation shows how backends are implemented, and what the connection is with versioning tools. The connection with versioning tools is explained because most code review services are tied to some versioning system.
+
+Griotte comes shipped with a reference implementation for using it with *GitHub>https://github.com*. Thus, examples from this implementation are given where appropriate.
+
+In the case of the GitHub backend, everything is delegated to the *GitHub API Bindings>https://balletie.github.io/GitHub*. 
+
+!!Creating a Backend
+
+A backend is implemented by realizing and implementing the model classes discussed in the *model section>model.pillar@model*. Here a summary is given of what needs to be implemented to conform to the model.
+
+!!!Storing groups
+
+The backend needs to store the groups of information in some way, such that they can be found again when another reviewer opens the review in Griotte's UI.
+
+In the case of Git-based repositories, this can be done using *==git-notes==>http://git-scm.com/docs/git-notes* in some ref namespace (such as ==refs/griotte==).
+
+!!!Creation of reviews and comments
+
+The backend needs to be able to create reviews on repositories. Further, it needs to be able to create comments on reviews (top-level comments) and on groups. The creation of these two are done in their class-side creation methods:
+
+;==GrReview class>>createOnRepository:withTitle:description:==
+:As the name suggests, it creates a review with that title and description on the repository given in the first parameter.
+:You might notice that there is no mention of a ''branch'' which has to be merged into another. As these are specific to some backends, it is left as a responsibility of the backend to determine which set of changed is to be integrated, and where it is to be integrated.
+:In the case of Git-based repositories, one can take the currently checked out branch and integrate it in the default branch.
+:The GitHub backend analyzes the *Epicea>model.pillar@epicea* log and finds the latest commit. Then the branch this commit was done on will be merged with the repository's default branch. View ==GrGitHubReview class>>createOnRepository:withTitle:description:== for the implementation.
+;==GrComment class>>createOnReview:withBody:==
+;==GrComment class>>createOnGroup:withBody:==
+:Two creation methods are provided for creating comments, to distinguish between creating a comment on a review and on a group.
+
+!!!Accessing information
+
+The implementation should be able to provide a list of repositories for a given user, and for each repository a list of reviews. These functionalities are implemented by the GitHub backend with ==GrGitHubUser>>allRepositories== and ==GrGitHubRepository>>allReviews==.
+
+For reviews and groups, the comments of both should be able to be provided as ==Collection==s containing ==GrComment==s.
+
+Further things that should be able to be accessed are obvious:
+
+- The creator, description, title of a review.
+- The creator, body, creation time and update time of a comment.
+- For a user, not much. It allows for anonymous users, meaning anyone can change any comment or review as one likes. If such operations are not possible, then it means that there is some concept of a user being logged in. Thus one might want to implement ==GrUser>>avatar== and ==GrUser>>username==
+- For a repository, its name.
+
+!!The Connection with Version Control Systems
+
+Griotte's model is agnostic about its connection to Version Control Systems (VCS). Thus, which branch has to be merged into which has to be determined by the backend implementation.
+
+!!!Porting over responsibilities
+
+Griotte relies on external tool support for the backends. However, it might be necessary to port some of the responsibility over to Griotte's model. For example, if specifying which branches should be merged into which is desirable to be done from Griotte's UI, the model needs to be adapted for this.
+
+!!!Using a Visitor for backend-specific UI
+
+Another approach might be to allow for flexible creation of backend-specific UI. This however does pose a challenge on integrating it within Griotte's main UI. One approach might be to extend the model with a *Visitor Pattern>https://en.wikipedia.org/wiki/Visitor_pattern*, which can visit specific backend implementations. This way, the UI stays more separated from the model, while still allowing for creating backend-specific UI.
+
+As Pharo supports extension methods, the Visitor implementation can easily be adapted for additional future backends.
